@@ -16,14 +16,14 @@ const toggleDarkMode = () => {
 </script>
 
 <template>
-  <main class="dark:bg-slate-900 pt-6">
+  <main class="dark:bg-slate-900 py-6 h-max 2xl:h-screen">
     <div class="">
       <Header @darkModeToggled="toggleDarkMode" :isDarkMode="isDarkMode" />
     </div>
-    <div class="text-center">
+    <div class="text-center my-4">
       <button
         @click="toggleSidebar = !toggleSidebar"
-        class="text-slate-600 md:hidden duration-500 hover:scale-125 dark:text-slate-300 text-4xl"
+        class="text-slate-600 md:hidden duration-500 hover:scale-125 dark:text-slate-300 text-2xl"
       >
         <i class="fa-solid fa-bars"></i>
       </button>
@@ -36,7 +36,7 @@ const toggleDarkMode = () => {
       </transition>
     </div>
     <Navbar class="hidden md:block" />
-    <section>
+    <section class="grid place-content-center">
       <router-view v-slot="{ Component }">
         <transition name="page" mode="out-in">
           <component :is="Component" />

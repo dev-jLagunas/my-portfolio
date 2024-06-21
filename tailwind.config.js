@@ -10,6 +10,7 @@ export default {
       },
       width: {
         "90vw": "90vw",
+        "fixed-width": "500px",
       },
     },
   },
