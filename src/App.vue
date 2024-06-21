@@ -16,7 +16,7 @@ const toggleDarkMode = () => {
 </script>
 
 <template>
-  <main class="dark:bg-slate-900">
+  <main class="dark:bg-slate-900 pt-6">
     <div class="">
       <Header @darkModeToggled="toggleDarkMode" :isDarkMode="isDarkMode" />
     </div>
@@ -36,6 +36,13 @@ const toggleDarkMode = () => {
       </transition>
     </div>
     <Navbar class="hidden md:block" />
+    <section>
+      <router-view v-slot="{ Component }">
+        <transition name="page" mode="out-in">
+          <component :is="Component" />
+        </transition>
+      </router-view>
+    </section>
   </main>
 </template>
 

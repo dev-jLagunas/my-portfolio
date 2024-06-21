@@ -1,0 +1,35 @@
+<script setup>
+import digitalPortrait from "../assets/home/digital-portrait.png";
+</script>
+
+<template>
+  <section class="relative">
+    <h1
+      class="text-6xl font-bold text-slate-800 dark:text-slate-200 text-center md:absolute md:top-24 md:left-80 lg:static"
+    >
+      I<span class="text-orange-400">'</span>m
+      <span class="text-emerald-500">Juan</span>
+    </h1>
+    <figure
+      class="md:flex md:justify-center md:items-center md:gap-4 lg:flex-col"
+    >
+      <img
+        :src="digitalPortrait"
+        alt="digital portrait of myself"
+        class="w-52 mx-auto my-4 sm:w-72"
+      />
+      <p class="text-slate-700 dark:text-slate-300 sm:text-xl lg:w-3/4 px-4">
+        I'm a
+        <span class="text-orange-400 font-bold text-xl sm:text-2xl"
+          >frontend developer</span
+        >
+        and
+        <span class="text-orange-400 font-bold text-xl sm:text-2xl"
+          >designer</span
+        >. I focus on making simple but vibrant user interfaces built with care.
+      </p>
+    </figure>
+  </section>
+</template>
+
+<style scoped></style>
