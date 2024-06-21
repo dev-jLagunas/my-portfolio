@@ -1,6 +1,7 @@
 <script setup>
 import { defineEmits } from "vue";
 
+// Emits
 const emit = defineEmits(["darkModeToggled"]);
 
 const toggleDarkMode = () => {
@@ -14,8 +15,6 @@ const props = defineProps({
     required: true,
   },
 });
-
-console.log(props.isDarkMode);
 </script>
 
 <template>
