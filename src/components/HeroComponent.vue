@@ -3,7 +3,7 @@ import digitalPortrait from "../assets/home/digital-portrait.png";
 </script>
 
 <template>
-  <section class="relative">
+  <section class="relative md:w-4/5 md:mx-auto">
     <h1
       class="text-6xl font-bold text-slate-800 dark:text-slate-200 text-center md:absolute md:top-24 md:left-80 lg:static"
     >
@@ -16,9 +16,11 @@ import digitalPortrait from "../assets/home/digital-portrait.png";
       <img
         :src="digitalPortrait"
         alt="digital portrait of myself"
-        class="w-52 mx-auto my-4 sm:w-72"
+        class="w-52 mx-auto my-4 sm:w-72 lg:w-52"
       />
-      <p class="text-slate-700 dark:text-slate-300 sm:text-xl lg:w-3/4 px-4">
+      <p
+        class="text-slate-700 dark:text-slate-300 sm:text-xl lg:w-full px-4 lg:px-0 2xl:w-2/3"
+      >
         I'm a
         <span class="text-orange-400 font-bold text-xl sm:text-2xl"
           >frontend developer</span

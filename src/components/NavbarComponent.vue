@@ -1,8 +1,8 @@
 <script setup></script>
 
 <template>
-  <nav class="">
-    <ul class="flex justify-center">
+  <nav class="my-4">
+    <ul class="flex justify-center text-slate-600 dark:text-slate-200">
       <li class="border-r-4 border-double border-emerald-500 pr-4">
         More About Me
       </li>

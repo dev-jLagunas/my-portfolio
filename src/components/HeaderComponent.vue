@@ -29,7 +29,7 @@ const props = defineProps({
       Hello<span class="text-5xl text-orange-400">!</span>
     </p>
     <div
-      class="flex flex-col gap-1 text-xs text-slate-600 dark:text-slate-200 divide-y-2 divide-slate-200"
+      class="flex flex-col gap-1 text-xs text-slate-600 dark:text-slate-200 divide-y-2 divide-slate-200 md:flex-row md:divide-y-0 md:divide-x-2"
     >
       <button>EN</button>
       <button class="md:pl-1 pt-1 md:pt-0">JP</button>
