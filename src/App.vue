@@ -16,24 +16,27 @@ const toggleDarkMode = () => {
 </script>
 
 <template>
-  <div class="dark:bg-slate-900">
-    <Header @darkModeToggled="toggleDarkMode" :isDarkMode="isDarkMode" />
-  </div>
-  <div>
-    <button
-      @click="toggleSidebar = !toggleSidebar"
-      class="text-slate-600 md:hidden duration-500 hover:scale-125 dark:text-slate-300 text-4xl"
-    >
-      <i class="fa-solid fa-bars"></i>
-    </button>
-    <transition name="fade">
-      <Sidebar
-        @closeSidebar="toggleSidebar = false"
-        v-if="toggleSidebar"
-        class="block fixed inset-0 bg-white md:hidden z-10"
-      />
-    </transition>
-  </div>
+  <main class="dark:bg-slate-900">
+    <div class="">
+      <Header @darkModeToggled="toggleDarkMode" :isDarkMode="isDarkMode" />
+    </div>
+    <div class="text-center">
+      <button
+        @click="toggleSidebar = !toggleSidebar"
+        class="text-slate-600 md:hidden duration-500 hover:scale-125 dark:text-slate-300 text-4xl"
+      >
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <transition name="fade">
+        <Sidebar
+          @closeSidebar="toggleSidebar = false"
+          v-if="toggleSidebar"
+          class="block fixed inset-0 bg-white md:hidden z-10"
+        />
+      </transition>
+    </div>
+    <Navbar class="hidden md:block" />
+  </main>
 </template>
 
 <style scoped>
