@@ -16,7 +16,7 @@ const toggleDarkMode = () => {
 </script>
 
 <template>
-  <main class="dark:bg-slate-900 py-6 h-max">
+  <main class="dark:bg-slate-900 py-6 h-max 2xl:h-screen">
     <div class="">
       <Header />
     </div>
