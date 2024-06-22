@@ -30,14 +30,13 @@ const toggleDarkMode = () => {
       <transition name="fade">
         <Sidebar
           @darkModeToggled="toggleDarkMode"
-          :isDarkMode="isDarkMode"
           @closeSidebar="toggleSidebar = false"
           v-if="toggleSidebar"
           class="block fixed inset-0 bg-white md:hidden z-10"
         />
       </transition>
     </div>
-    <Navbar class="hidden md:block" />
+    <Navbar @darkModeToggled="toggleDarkMode" class="hidden md:block" />
     <section class="grid place-content-center">
       <router-view v-slot="{ Component }">
         <transition name="page" mode="out-in">

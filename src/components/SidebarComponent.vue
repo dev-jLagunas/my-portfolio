@@ -11,14 +11,6 @@ const toggleDarkMode = () => {
   emit("darkModeToggled");
 };
 
-//Props
-const props = defineProps({
-  isDarkMode: {
-    type: Boolean,
-    required: true,
-  },
-});
-
 // Router
 const router = useRouter();
 
