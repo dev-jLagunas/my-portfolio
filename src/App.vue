@@ -18,7 +18,7 @@ const toggleDarkMode = () => {
 <template>
   <main class="dark:bg-slate-900 py-6 h-max 2xl:h-screen">
     <div class="">
-      <Header @darkModeToggled="toggleDarkMode" :isDarkMode="isDarkMode" />
+      <Header />
     </div>
     <div class="text-center my-4">
       <button
@@ -29,6 +29,8 @@ const toggleDarkMode = () => {
       </button>
       <transition name="fade">
         <Sidebar
+          @darkModeToggled="toggleDarkMode"
+          :isDarkMode="isDarkMode"
           @closeSidebar="toggleSidebar = false"
           v-if="toggleSidebar"
           class="block fixed inset-0 bg-white md:hidden z-10"
