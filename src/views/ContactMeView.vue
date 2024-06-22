@@ -87,22 +87,24 @@ import selfImg from "@/assets/contact/self-illustration.png";
         >
           Send a Message<span class="font-bold text-orange-400">!</span>
         </h2>
-        <label for="" class="sr-only">name</label>
+        <label for="name" class="sr-only">name</label>
         <input
           type="text"
           placeholder="name"
           class="w-full dark:bg-slate-900 text-center text-slate-600 dark:text-slate-200"
+          id="name"
         />
-        <label for="" class="sr-only">email</label>
+        <label for="email" class="sr-only">email</label>
         <input
-          type="text"
+          type="email"
           placeholder="email"
           class="w-full dark:bg-slate-900 text-center text-slate-600 dark:text-slate-200 border-t dark:border-slate-800"
+          id="email"
         />
-        <label for="" class="sr-only">message</label>
+        <label for="message" class="sr-only">message</label>
         <textarea
           name=""
-          id=""
+          id="message"
           cols="30"
           rows="10"
           placeholder="message"
