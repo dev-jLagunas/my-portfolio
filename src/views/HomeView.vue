@@ -1,12 +1,16 @@
 <script setup>
 import Hero from "../components/HeroComponent.vue";
-import Projects from "../components/ProjectsHome.vue";
+import ProjectsHome from "../components/ProjectsHome.vue";
 </script>
 
 <template>
-  <section class="lg:grid lg:grid-cols-6">
-    <Hero class="col-span-2" />
-    <Projects />
+  <section class="lg:grid lg:grid-cols-6 lg:h-screen dark:bg-slate-900">
+    <div class="lg:col-span-2 lg:sticky lg:top-0">
+      <Hero />
+    </div>
+    <div class="lg:col-span-4 lg:overflow-y-auto">
+      <ProjectsHome />
+    </div>
   </section>
 </template>
 

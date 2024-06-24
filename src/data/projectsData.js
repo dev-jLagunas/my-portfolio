@@ -1,4 +1,4 @@
-export const projects = [
+export const projectsData = [
   {
     id: 1,
     name: "Cafe Triangle",
@@ -7,6 +7,7 @@ export const projects = [
     When I first started learning web dev I made it my one year goal to create our shops website. This is the final project.
     I especially love the vibrant but subdued user interface
     `,
+    mainScreenshot: "@/assets/screenshots/cafe-screenshot-main.jpg",
     images: {
       desktop: [
         "@/assets/screenshots/cafe-desktop-shot-1.png",
@@ -38,13 +39,14 @@ export const projects = [
     id: 2,
     name: "Code Chicano",
     tagline:
-      "A crud blog about my experience as a Mexican American self-taught programmer",
+      "A blog about my experience as a Mexican-American self-taught programmer",
     description: `Code Chicano is a fully functioning C.R.U.D application with Firebase as its backend. It is also made with a quill editor so
     I am able to login and write new blog posts any time I want. The blog is fully responsive with many great features and funtionality.
     `,
+    mainScreenshot: "@/assets/screenshots/chicano-screenshot-main.jpg",
     images: {
       desktop: [
-        "@/assets/screenshots/chicano-desktop-shot-1.png",
+        "assets/screenshots/chicano-desktop-shot-1.png",
         "@/assets/screenshots/chicano-desktop-shot-2.png",
         "@/assets/screenshots/chicano-desktop-shot-3.png",
       ],
@@ -77,11 +79,12 @@ export const projects = [
     name: "Cosmic Neighborhood",
     tagline:
       "Cosmic Neighborhood is an immersive and interactive space-themed website",
-    description: `Cosmic Neighborhood is an expanded and enhanced version of a Frontend Mentor challenge. 
+    description: `Cosmic Neighborhood is an expanded and enhanced version of a Frontend Mentor challenge.
     Users can explore the planets of our solar system in an interactive and informative
-    way. One of the standout features of this project is the interactive 3D models of the planets, created using Three.js. 
+    way. One of the standout features of this project is the interactive 3D models of the planets, created using Three.js.
     Users can zoom in, view the planets from different angles, and engage with the models for a more dynamic experience.
     `,
+    mainScreenshot: "@/assets/screenshots/cosmic-screenshot-main.jpg",
     images: {
       desktop: [
         "@/assets/screenshots/cosmic-desktop-shot-1.png",
@@ -115,8 +118,9 @@ export const projects = [
       "A horizontal scroll gallery filled with scroll triggered animations",
     description: `This was more of a passion project. For some reason I alway found horizontal scroll websites to be lovely.
     So I decided to showcase my photography using GSAP scroll trigger and horizontal scroll which was much tricker than I expected.
-    The project was very time consuming but worth it in the end. 
+    The project was very time consuming but worth it in the end.
     `,
+    mainScreenshot: "@/assets/screenshots/gallery-screenshot-main.jpg",
     images: {
       desktop: [
         "@/assets/screenshots/gallery-desktop-shot-1.png",
