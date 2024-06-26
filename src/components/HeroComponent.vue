@@ -1,11 +1,11 @@
 <script setup>
-import digitalPortrait from "../assets/home/digital-portrait.png";
+import digitalPortrait from "@/assets/home/digital-portrait.png";
 </script>
 
 <template>
-  <section class="relative md:w-4/5 md:mx-auto lg:mt-8">
+  <section class="relative md:w-4/5 md:mx-auto lg:mt-8 font-poppins">
     <h3
-      class="hidden text-emerald-500 w-max py-1 ml-auto mt-4 text-2xl font-pacifico lg:block mb-8 xl:text-4xl"
+      class="hidden pacifico-title w-max py-1 ml-auto mt-4 text-3xl lg:block mb-8 xl:text-4xl"
     >
       Projects<span
         ><i class="fa-solid fa-arrow-right text-orange-400 pl-4"></i>
@@ -25,26 +25,27 @@ import digitalPortrait from "../assets/home/digital-portrait.png";
         alt="digital portrait of myself"
         class="w-60 mx-auto my-4 sm:w-72 lg:w-52 xl:w-72"
       />
-      <p
-        class="text-slate-700 text-center px-6 dark:text-slate-300 sm:text-xl lg:w-full lg:px-0 2xl:w-2/3 font-poppins lg:text-center"
+      <figcaption
+        class="text-slate-700 text-center px-4 dark:text-slate-200 md:text-xl md:px-0 lg:text-base"
       >
         I'm a
-        <span class="text-orange-400 font-bold text-xl sm:text-2xl"
-          >frontend developer</span
+        <span
+          class="text-orange-400 font-semibold text-lg md:text-2xl lg:text-lg"
+          >Frontend Developer</span
         >
         and
-        <span class="text-orange-400 font-bold text-xl sm:text-2xl"
-          >designer</span
-        >. I focus on making simple but vibrant user interfaces built with care.
-      </p>
+        <span
+          class="text-orange-400 font-semibold text-lg md:text-2xl lg:text-lg"
+          >Designer</span
+        >. I enjoy creating simple, user friendly, efficient and vibrant
+        websites.
+      </figcaption>
     </figure>
     <h3
-      class="text-center text-emerald-500 w-max px-4 py-1 mx-auto my-16 text-4xl font-pacifico lg:hidden"
+      class="text-center pacifico-title w-max px-4 py-1 mx-auto my-16 text-4xl lg:hidden"
     >
       Projects<span
-        ><i
-          class="fa-solid fa-arrow-turn-down text-orange-400 pl-4 lg:hidden"
-        ></i>
+        ><i class="fa-solid fa-arrow-turn-down text-orange-400 pl-4"></i>
       </span>
     </h3>
   </section>

@@ -32,3 +32,7 @@ Custom Tailwind Utility Classes
 .nav-link-emerald {
   @apply bg-emerald-500 text-white py-2 px-6 rounded-tr-full rounded-bl-full;
 }
+
+.pacifico-title {
+  @apply text-emerald-500 font-pacifico;
+}
