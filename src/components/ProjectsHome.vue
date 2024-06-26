@@ -21,11 +21,11 @@ onMounted(() => {
 
 <template>
   <section
-    class="font-poppins dark:text-slate-200 text-slate-700 w-90vw mx-auto mt-8 lg:mt-0 lg:grid lg:grid-cols-1 lg:pr-8 lg:w-full xl:grid-cols-2 xl:gap-10 relative"
+    class="font-poppins dark:text-slate-200 text-slate-700 w-90vw mx-auto mt-8 lg:mt-0 lg:grid lg:grid-cols-1 lg:pr-8 lg:w-full xl:grid-cols-2 relative"
   >
-    <div v-for="project in projects" :key="project.id" class="mb-16">
+    <div v-for="project in projects" :key="project.id" class="mb-16 xl:w-5/6">
       <h2
-        class="font-bold text-4xl text-center md:text-5xl lg:text-6xl xl:text-4xl hover:scale-110 duration-500 hover:cursor-pointer hover:text-emerald-500"
+        class="font-bold text-4xl text-center md:text-5xl lg:text-5xl hover:scale-110 duration-500 hover:cursor-pointer hover:text-emerald-500"
       >
         <router-link
           :to="{ name: 'project-details', params: { id: project.id } }"

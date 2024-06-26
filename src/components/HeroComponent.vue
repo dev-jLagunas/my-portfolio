@@ -1,5 +1,6 @@
 <script setup>
 import digitalPortrait from "@/assets/home/digital-portrait.png";
+import LinkButtons from "@/components/LinksBtnsContainer.vue";
 </script>
 
 <template>
@@ -41,6 +42,7 @@ import digitalPortrait from "@/assets/home/digital-portrait.png";
         websites.
       </figcaption>
     </figure>
+    <LinkButtons class="hidden md:block" />
     <h3
       class="text-center pacifico-title w-max px-4 py-1 mx-auto my-16 text-4xl lg:hidden"
     >
