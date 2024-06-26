@@ -1,6 +1,7 @@
 <script setup>
 import { ref, onMounted } from "vue";
 import { projectsData } from "@/data/projectsData.js";
+import websiteSvg from "@/assets/svg/website-program-svgrepo-com.svg";
 
 const projects = ref(projectsData);
 
@@ -21,18 +22,28 @@ onMounted(() => {
 
 <template>
   <section
-    class="font-poppins dark:text-slate-200 text-slate-700 w-90vw mx-auto mt-8 lg:grid lg:grid-cols-1 lg:pr-8 lg:w-full xl:grid-cols-2 xl:gap-10"
+    class="font-poppins dark:text-slate-200 text-slate-700 w-90vw mx-auto mt-8 lg:mt-0 lg:grid lg:grid-cols-1 lg:pr-8 lg:w-full xl:grid-cols-2 xl:gap-10 relative"
   >
     <div v-for="project in projects" :key="project.id" class="mb-16">
       <h2
-        class="font-bold text-4xl text-center border-b-4 border-b-orange-400 pb-2 md:text-5xl lg:text-6xl xl:text-4xl"
+        class="font-bold text-4xl text-center md:text-5xl lg:text-6xl xl:text-4xl"
       >
         {{ project.name }}
       </h2>
       <p class="text-center py-4 text-sm md:text-lg lg:text-lg">
         {{ project.tagline }}
       </p>
-      <figure class="">
+      <figure>
+        <ul class="flex justify-evenly text-3xl pb-4">
+          <li>
+            <a :href="project.github"><i class="fa-brands fa-github"></i></a>
+          </li>
+          <li>
+            <a :href="project.liveDemo"
+              ><i class="fa-solid fa-laptop-code"></i
+            ></a>
+          </li>
+        </ul>
         <img
           :src="resolvedImages[project.mainScreenshot]"
           alt="main screenshot"
@@ -54,8 +65,8 @@ onMounted(() => {
     </div>
   </section>
   <div class="lg:col-span-2">
-    <h3 class="text-4xl font-pacifico text-orange-400 text-center lg:text-6xl">
-      More to Come!
+    <h3 class="text-4xl font-pacifico text-emerald-500 text-center lg:text-6xl">
+      More to Come<span class="text-orange-400">!</span>
     </h3>
   </div>
 </template>
