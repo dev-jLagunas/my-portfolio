@@ -13,3 +13,22 @@ CSS Reset
   box-sizing: border-box;
   list-style: none;
 }
+
+/********************************************************
+Custom Tailwind Utility Classes
+*********************************************************/
+.flex-center-col {
+  @apply flex justify-center items-center flex-col;
+}
+
+.flex-start-col {
+  @apply flex justify-center items-start flex-col;
+}
+
+.nav-link-orange {
+  @apply bg-orange-400 text-white py-2 px-6 rounded-br-full rounded-tl-full;
+}
+
+.nav-link-emerald {
+  @apply bg-emerald-500 text-white py-2 px-6 rounded-tr-full rounded-bl-full;
+}
