@@ -1,14 +1,14 @@
 <script setup>
 import { ref } from "vue";
-import Navbar from "./components/NavbarComponent.vue";
-import Sidebar from "./components/SidebarComponent.vue";
-import Header from "./components/HeaderComponent.vue";
+import Navbar from "@/components/NavbarComponent.vue";
+import Sidebar from "@/components/SidebarComponent.vue";
+import Header from "@/components/HeaderComponent.vue";
 
-//State
+// State
 const toggleSidebar = ref(false);
 const isDarkMode = ref(false);
 
-//Methods
+// Methods
 const toggleDarkMode = () => {
   isDarkMode.value = !isDarkMode.value;
   document.documentElement.classList.toggle("dark", isDarkMode.value);
@@ -16,45 +16,53 @@ const toggleDarkMode = () => {
 </script>
 
 <template>
-  <main class="dark:bg-slate-900 py-6 h-max 2xl:h-screen">
-    <div class="">
-      <Header />
-    </div>
-    <div class="text-center my-4">
+  <div class="py-6 dark:bg-slate-900">
+    <Header />
+    <div class="text-center">
       <button
         @click="toggleSidebar = !toggleSidebar"
-        class="text-slate-600 md:hidden duration-500 hover:scale-125 dark:text-slate-300 text-2xl"
+        class="text-3xl my-2 text-slate-600 dark:text-slate-400 md:hidden"
       >
         <i class="fa-solid fa-bars"></i>
       </button>
       <transition name="fade">
         <Sidebar
+          class="block fixed inset-0 z-10 md:hidden"
+          v-if="toggleSidebar"
           @darkModeToggled="toggleDarkMode"
           @closeSidebar="toggleSidebar = false"
-          v-if="toggleSidebar"
-          class="block fixed inset-0 bg-white md:hidden z-10"
         />
       </transition>
     </div>
     <Navbar @darkModeToggled="toggleDarkMode" class="hidden md:block" />
-    <section class="grid place-content-center">
+    <main class="grid place-content-center">
       <router-view v-slot="{ Component }">
-        <transition name="page" mode="out-in">
+        <transition name="page">
           <component :is="Component" />
         </transition>
       </router-view>
-    </section>
-  </main>
+    </main>
+  </div>
 </template>
 
 <style scoped>
 .fade-enter-active,
 .fade-leave-active {
-  transition: transform 2s ease;
+  transition: transform 1.5s ease;
 }
 
 .fade-enter-from,
 .fade-leave-to {
   transform: translateY(-100%);
+}
+
+.page-enter-active,
+.page-leave-active {
+  transition: opacity 1s ease;
+}
+
+.page-enter-from,
+.page-leave-to {
+  opacity: 0;
 }
 </style>
