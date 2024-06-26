@@ -26,7 +26,7 @@ onMounted(() => {
   >
     <div v-for="project in projects" :key="project.id" class="mb-16">
       <h2
-        class="font-bold text-4xl text-center md:text-5xl lg:text-6xl xl:text-4xl"
+        class="font-bold text-4xl text-center md:text-5xl lg:text-6xl xl:text-4xl hover:scale-110 duration-500 hover:cursor-pointer hover:text-emerald-500"
       >
         {{ project.name }}
       </h2>
@@ -35,13 +35,11 @@ onMounted(() => {
       </p>
       <figure>
         <ul class="flex justify-evenly text-3xl pb-4">
-          <li>
+          <li class="hover:scale-110 duration-500">
             <a :href="project.github"><i class="fa-brands fa-github"></i></a>
           </li>
-          <li>
-            <a :href="project.liveDemo"
-              ><i class="fa-solid fa-laptop-code"></i
-            ></a>
+          <li class="hover:scale-110 duration-500">
+            <a :href="project.liveDemo"><i class="fa-solid fa-display"></i></a>
           </li>
         </ul>
         <img
