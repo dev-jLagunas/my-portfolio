@@ -1,7 +1,6 @@
 <script setup>
 import { ref, onMounted } from "vue";
 import { projectsData } from "@/data/projectsData.js";
-import websiteSvg from "@/assets/svg/website-program-svgrepo-com.svg";
 
 const projects = ref(projectsData);
 
@@ -28,7 +27,11 @@ onMounted(() => {
       <h2
         class="font-bold text-4xl text-center md:text-5xl lg:text-6xl xl:text-4xl hover:scale-110 duration-500 hover:cursor-pointer hover:text-emerald-500"
       >
-        {{ project.name }}
+        <router-link
+          :to="{ name: 'project-details', params: { id: project.id } }"
+        >
+          {{ project.name }}
+        </router-link>
       </h2>
       <p class="text-center py-4 text-sm md:text-lg lg:text-lg">
         {{ project.tagline }}

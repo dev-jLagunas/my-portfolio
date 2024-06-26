@@ -1,6 +1,6 @@
 export const projectsData = [
   {
-    id: 1,
+    id: "1",
     name: "Cafe Triangle",
     tagline: "Cafe Triangle was a small cafe located in Kanazawa, Japan",
     description: `Cafe Triangle was the first fully functioning hosted website I ever made.
@@ -36,7 +36,7 @@ export const projectsData = [
     },
   },
   {
-    id: 2,
+    id: "2",
     name: "Code Chicano",
     tagline:
       "A blog about my experience as a Mexican-American self-taught programmer",
@@ -46,7 +46,7 @@ export const projectsData = [
     mainScreenshot: "@/assets/screenshots/chicano-screenshot-main.jpg",
     images: {
       desktop: [
-        "assets/screenshots/chicano-desktop-shot-1.png",
+        "@/assets/screenshots/chicano-desktop-shot-1.png",
         "@/assets/screenshots/chicano-desktop-shot-2.png",
         "@/assets/screenshots/chicano-desktop-shot-3.png",
       ],
@@ -75,7 +75,7 @@ export const projectsData = [
     },
   },
   {
-    id: 3,
+    id: "3",
     name: "Cosmic Neighborhood",
     tagline:
       "Cosmic Neighborhood is an immersive and interactive space-themed website",
@@ -112,7 +112,7 @@ export const projectsData = [
     },
   },
   {
-    id: 4,
+    id: "4",
     name: "Horizontal Scroll Gallery",
     tagline:
       "A horizontal scroll gallery filled with scroll triggered animations",
