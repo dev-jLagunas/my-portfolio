@@ -4,6 +4,7 @@ import Navbar from "@/components/NavbarComponent.vue";
 import Sidebar from "@/components/SidebarComponent.vue";
 import Header from "@/components/HeaderComponent.vue";
 import SocialLinks from "@/components/SocialLinksComponent.vue";
+import QuickLinks from "@/components/QuickAccessComponent.vue";
 // State
 const toggleSidebar = ref(false);
 const isDarkMode = ref(false);
@@ -16,9 +17,10 @@ const toggleDarkMode = () => {
 </script>
 
 <template>
-  <div class="py-6 dark:bg-slate-900 relative">
+  <div class="py-6 dark:bg-slate-900 relative h-screen">
     <Header />
     <SocialLinks class="fixed top-1/3 left-2 z-10" />
+    <QuickLinks class="fixed right-2 top-1/3" />
     <div class="text-center">
       <button
         @click="toggleSidebar = !toggleSidebar"
