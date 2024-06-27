@@ -8,17 +8,17 @@ import Skills from "@/components/AboutMeSkills.vue";
 
 <template>
   <div
-    class="font-poppins w-90vw text-slate-700 dark:text-slate-200 flex-center-col"
+    class="font-poppins w-90vw text-slate-700 dark:text-slate-200 flex-center-col mt-10"
   >
-    <section>
+    <section class="mb-4 md:w-5/6 lg:w-3/4 xl:w-2/5">
       <Specialization />
     </section>
-    <section>
+    <section class="mb-4 md:grid md:grid-cols-2">
       <Skills />
-      <Passions />
+      <Passions class="" />
     </section>
-    <img :src="selfPhoto" alt="image of myself" class="" />
-    <LinksButtons />
+    <img :src="selfPhoto" alt="image of myself" class="md:w-1/2 lg:w-1/3" />
+    <LinksButtons class="mt-8" />
   </div>
 </template>
 
