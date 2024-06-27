@@ -5,6 +5,14 @@ const emit = defineEmits(["darkModeToggled"]);
 const toggleDarkMode = () => {
   emit("darkModeToggled");
 };
+
+// Props
+const props = defineProps({
+  isDarkMode: {
+    type: Boolean,
+    required: true,
+  },
+});
 </script>
 
 <template>
@@ -20,7 +28,9 @@ const toggleDarkMode = () => {
         <router-link to="/contact">Get In Touch</router-link>
       </li>
       <li class="nav-link-orange">
-        <button @click="toggleDarkMode">Dark Mode</button>
+        <button @click="toggleDarkMode">
+          {{ isDarkMode ? "Light Mode" : "Dark Mode" }}
+        </button>
       </li>
       <li class="nav-link-emerald"><button>Language</button></li>
     </ul>

@@ -12,6 +12,14 @@ const toggleDarkMode = () => {
   emit("darkModeToggled");
 };
 
+// Props
+const props = defineProps({
+  isDarkMode: {
+    type: Boolean,
+    required: true,
+  },
+});
+
 // Router
 const router = useRouter();
 
@@ -41,7 +49,9 @@ const navigateTo = (path) => {
           <button @click="navigateTo('/contact')">Get in touch</button>
         </li>
         <li class="nav-link-emerald hover:scale-125 duration-150">
-          <button @click="toggleDarkMode">Dark Mode</button>
+          <button @click="toggleDarkMode">
+            {{ isDarkMode ? "Light Mode" : "Dark Mode" }}
+          </button>
         </li>
         <li class="nav-link-orange hover:scale-125 duration-150">Language</li>
       </ul>
