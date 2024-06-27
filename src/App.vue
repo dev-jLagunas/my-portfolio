@@ -17,7 +17,7 @@ const toggleDarkMode = () => {
 </script>
 
 <template>
-  <div class="py-6 dark:bg-slate-900 relative h-max">
+  <div class="py-6 dark:bg-slate-900 relative h-max md:h-screen">
     <Header />
     <SocialLinks class="fixed top-1/3 left-2 z-10 lg:left-6" />
     <QuickLinks class="fixed right-2 top-1/3 lg:right-6" />

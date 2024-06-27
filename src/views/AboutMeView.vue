@@ -8,7 +8,7 @@ import Skills from "@/components/AboutMeSkills.vue";
 
 <template>
   <div
-    class="font-poppins w-90vw text-slate-700 dark:text-slate-200 flex-center-col mt-10"
+    class="font-poppins w-90vw text-slate-700 dark:text-slate-200 flex-center-col mt-10 md:pb-8"
   >
     <section class="mb-4 md:w-5/6 lg:w-3/4 xl:w-2/5">
       <Specialization />

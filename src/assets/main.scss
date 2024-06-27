@@ -48,3 +48,7 @@ Custom Tailwind Utility Classes
 .primary-font-colors {
   @apply text-slate-700 dark:text-slate-200;
 }
+
+.contact-icon-styles {
+  @apply pr-2 text-orange-400;
+}
