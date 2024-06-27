@@ -45,11 +45,14 @@ onMounted(() => {
             <a :href="project.liveDemo"><i class="fa-solid fa-display"></i></a>
           </li>
         </ul>
-        <img
-          :src="resolvedImages[project.mainScreenshot]"
-          alt="main screenshot"
-          class="custom-shadow"
-        />
+        <router-link
+          :to="{ name: 'project-details', params: { id: project.id } }"
+        >
+          <img
+            :src="resolvedImages[project.mainScreenshot]"
+            alt="main screenshot"
+            class="custom-shadow"
+        /></router-link>
         <figcaption>
           <ul
             class="bg-emerald-500 text-white flex justify-evenly py-2 text-sm custom-shadow font-semibold"

@@ -52,3 +52,7 @@ Custom Tailwind Utility Classes
 .contact-icon-styles {
   @apply pr-2 text-orange-400;
 }
+
+.project-details-titles {
+  @apply text-emerald-500 font-bold text-center text-2xl;
+}
