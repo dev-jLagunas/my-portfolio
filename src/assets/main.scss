@@ -36,3 +36,15 @@ Custom Tailwind Utility Classes
 .pacifico-title {
   @apply text-emerald-500 font-pacifico;
 }
+
+.about-me-titles {
+  @apply text-orange-400 font-bold text-center text-2xl;
+}
+
+.about-me-technologies {
+  @apply text-emerald-500 text-lg;
+}
+
+.primary-font-colors {
+  @apply text-slate-700 dark:text-slate-200;
+}
