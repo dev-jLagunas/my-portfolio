@@ -27,7 +27,7 @@ import LinkButtons from "@/components/LinksBtnsContainer.vue";
         class="w-60 mx-auto my-4 sm:w-72 lg:w-52 xl:w-72"
       />
       <figcaption
-        class="text-slate-700 text-center px-4 dark:text-slate-200 md:text-xl md:px-0 lg:text-base"
+        class="text-slate-700 text-center px-4 dark:text-slate-200 md:text-xl md:px-0 lg:text-base lg:w-2/3"
       >
         I'm a
         <span

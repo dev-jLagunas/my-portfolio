@@ -1,5 +1,6 @@
 <script setup>
 import selfImg from "@/assets/contact/self-illustration.png";
+import LinksButtons from "@/components/LinksBtnsContainer.vue";
 </script>
 
 <template>
@@ -113,6 +114,7 @@ import selfImg from "@/assets/contact/self-illustration.png";
         <button class="w-2/3 bg-emerald-500 text-white">Submit</button>
       </form>
     </section>
+    <LinksButtons class="pb-4" />
   </section>
 </template>
 

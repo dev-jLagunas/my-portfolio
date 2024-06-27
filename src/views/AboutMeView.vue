@@ -1,12 +1,14 @@
 <script setup>
 import selfPhoto from "@/assets/about/self-img.png";
+import LinksButtons from "@/components/LinksBtnsContainer.vue";
+
 const specialization = `I specialize in front-end development with Angular and Vue, and have strong skills in vanilla JavaScript and CSS, TypeScript, and frameworks like Tailwind CSS. 
 I've built several dynamic projects and bring a diverse background, including business ownership and fluency in English, Spanish, and Japanese. `;
 </script>
 
 <template>
   <section
-    class="mt-4 md:w-2/3 md:mx-auto lg:w-1/2 md:grid md:place-content-center 2xl:mt-16"
+    class="mt-4 md:w-2/3 md:mx-auto lg:w-1/2 md:grid md:place-content-center 2xl:mt-16 dark:bg-slate-900"
   >
     <div class="mt-4 font-poppins">
       <article class="w-90vw mx-auto md:w-full">
@@ -91,6 +93,7 @@ I've built several dynamic projects and bring a diverse background, including bu
         class="w-90vw mx-auto mt-4 sm:w-96"
       />
     </div>
+    <LinksButtons class="my-4" />
   </section>
 </template>
 

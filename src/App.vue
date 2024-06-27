@@ -17,7 +17,7 @@ const toggleDarkMode = () => {
 </script>
 
 <template>
-  <div class="py-6 dark:bg-slate-900 relative h-screen">
+  <div class="py-6 dark:bg-slate-900 relative h-max">
     <Header />
     <SocialLinks class="fixed top-1/3 left-2 z-10 lg:left-6" />
     <QuickLinks class="fixed right-2 top-1/3 lg:right-6" />
@@ -38,8 +38,12 @@ const toggleDarkMode = () => {
         />
       </transition>
     </div>
-    <Navbar @darkModeToggled="toggleDarkMode" :isDarkMode="isDarkMode" class="hidden md:block" />
-    <main class="grid place-content-center">
+    <Navbar
+      @darkModeToggled="toggleDarkMode"
+      :isDarkMode="isDarkMode"
+      class="hidden md:block"
+    />
+    <main class="grid place-content-center dark:bg-slate-900">
       <router-view v-slot="{ Component }">
         <transition name="page">
           <component :is="Component" />
