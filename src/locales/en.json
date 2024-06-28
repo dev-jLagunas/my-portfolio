@@ -48,5 +48,11 @@
   "linksBtnsContainer": {
     "home": "Home",
     "contact": "Contact"
+  },
+  "projects": {
+    "project1Tagline": "Cafe Triangle was a small cafe located in Kanazawa, Japan",
+    "project2Tagline": "A blog about my experience as a Mexican-American self-taught programmer",
+    "project3Tagline": "Cosmic Neighborhood is an immersive and interactive space-themed website",
+    "project4Tagline": "A horizontal scroll gallery filled with scroll triggered animations"
   }
 }

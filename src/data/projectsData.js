@@ -2,7 +2,8 @@ export const projectsData = [
   {
     id: "1",
     name: "Cafe Triangle",
-    tagline: "Cafe Triangle was a small cafe located in Kanazawa, Japan",
+
+    taglineKey: "project1Tagline",
     description: `Cafe Triangle was the first fully functioning hosted website I ever made.
     When I first started learning web dev I made it my one year goal to create our shops website. This is the final project.
     I especially love the vibrant but subdued user interface
@@ -38,8 +39,8 @@ export const projectsData = [
   {
     id: "2",
     name: "Code Chicano",
-    tagline:
-      "A blog about my experience as a Mexican-American self-taught programmer",
+
+    taglineKey: "project2Tagline",
     description: `Code Chicano is a fully functioning C.R.U.D application with Firebase as its backend. It is also made with a quill editor so
     I am able to login and write new blog posts any time I want. The blog is fully responsive with many great features and funtionality.
     `,
@@ -77,8 +78,8 @@ export const projectsData = [
   {
     id: "3",
     name: "Cosmic Neighborhood",
-    tagline:
-      "Cosmic Neighborhood is an immersive and interactive space-themed website",
+
+    taglineKey: "project3Tagline",
     description: `Cosmic Neighborhood is an expanded and enhanced version of a Frontend Mentor challenge.
     Users can explore the planets of our solar system in an interactive and informative
     way. One of the standout features of this project is the interactive 3D models of the planets, created using Three.js.
@@ -114,8 +115,8 @@ export const projectsData = [
   {
     id: "4",
     name: "Horizontal Scroll Gallery",
-    tagline:
-      "A horizontal scroll gallery filled with scroll triggered animations",
+
+    taglineKey: "project4Tagline",
     description: `This was more of a passion project. For some reason I alway found horizontal scroll websites to be lovely.
     So I decided to showcase my photography using GSAP scroll trigger and horizontal scroll which was much tricker than I expected.
     The project was very time consuming but worth it in the end.

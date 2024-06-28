@@ -1,7 +1,9 @@
 <script setup>
 import { ref, onMounted } from "vue";
+import { useI18n } from "vue-i18n";
 import { projectsData } from "@/data/projectsData.js";
 
+const { t } = useI18n();
 const projects = ref(projectsData);
 
 const resolvedImages = ref({});
@@ -34,7 +36,7 @@ onMounted(() => {
         </router-link>
       </h2>
       <p class="text-center py-4 text-sm md:text-lg lg:text-lg">
-        {{ project.tagline }}
+        {{ t(`projects.${project.taglineKey}`) }}
       </p>
       <figure>
         <ul class="flex justify-evenly text-3xl pb-4">
@@ -58,10 +60,10 @@ onMounted(() => {
             class="bg-emerald-500 text-white flex justify-evenly py-2 text-sm custom-shadow font-semibold"
           >
             <li
-              v-for="(technologies, index) in project.technologies"
+              v-for="(technology, index) in project.technologies"
               :key="index"
             >
-              {{ technologies }}
+              {{ technology }}
             </li>
           </ul>
         </figcaption>

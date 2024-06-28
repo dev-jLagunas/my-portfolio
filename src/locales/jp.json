@@ -48,5 +48,11 @@
   "linksBtnsContainer": {
     "home": "ホーム",
     "contact": "連絡先"
+  },
+  "projects": {
+    "project1Tagline": "カフェトライアングルは、日本の金沢にある小さなカフェでした",
+    "project2Tagline": "メキシコ系アメリカ人の自学プログラマーとしての私の経験についてのブログ",
+    "project3Tagline": "Cosmic Neighborhoodは、没入型でインタラクティブな宇宙をテーマにしたウェブサイトです",
+    "project4Tagline": "スクロールトリガーアニメーションが満載の水平スクロールギャラリー"
   }
 }
