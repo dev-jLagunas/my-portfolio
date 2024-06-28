@@ -3,12 +3,30 @@
     "mainProjects": "Main Projects",
     "aboutMe": "About Me",
     "contact": "Get In Touch",
-    "language": "Language"
+    "lightMode": "Light Mode",
+    "darkMode": "Dark Mode",
+    "language": "Language",
+    "english": "English",
+    "spanish": "Spanish",
+    "japanese": "Japanese"
   },
   "sidebar": {
-    "howdy": "Howdy!",
+    "howdy": "Howdy",
     "myMainProjects": "My main projects",
     "moreAboutMe": "More about me",
-    "getInTouch": "Get in touch"
+    "getInTouch": "Get in touch",
+    "lightMode": "Light Mode",
+    "darkMode": "Dark Mode",
+    "language": "Language",
+    "english": "English",
+    "spanish": "Spanish",
+    "japanese": "Japanese"
+  },
+  "hero": {
+    "projects": "Projects",
+    "imJuan": "I<span class='text-orange-400'>'</span>m <span class='text-emerald-500'>Juan</span>",
+    "frontendDeveloper": "Frontend Developer",
+    "designer": "Designer",
+    "description": "I'm a <span class='text-orange-400 font-semibold text-lg md:text-2xl lg:text-lg'>{frontendDeveloper}</span> and <span class='text-orange-400 font-semibold text-lg md:text-2xl lg:text-lg'>{designer}</span>. I enjoy creating simple, user friendly, efficient and vibrant websites."
   }
 }

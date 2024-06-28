@@ -1,14 +1,32 @@
 {
   "nav": {
-    "mainProjects": "主なプロジェクト",
+    "mainProjects": "プロジェクト",
     "aboutMe": "私について",
-    "contact": "連絡を取る",
-    "language": "言語"
+    "contact": "連絡",
+    "lightMode": "ライトモード",
+    "darkMode": "ダークモード",
+    "language": "言語",
+    "english": "英語",
+    "spanish": "スペイン語",
+    "japanese": "日本語"
   },
   "sidebar": {
-    "howdy": "こんにちは！",
+    "howdy": "こんにちは",
     "myMainProjects": "私の主なプロジェクト",
     "moreAboutMe": "私についてもっと",
-    "getInTouch": "連絡を取る"
+    "getInTouch": "連絡を取る",
+    "lightMode": "ライトモード",
+    "darkMode": "ダークモード",
+    "language": "言語",
+    "english": "英語",
+    "spanish": "スペイン語",
+    "japanese": "日本語"
+  },
+  "hero": {
+    "projects": "プロジェクト",
+    "imJuan": "私は<span class='text-emerald-500'>ファン</span>です",
+    "frontendDeveloper": "フロントエンド開発者",
+    "designer": "デザイナー",
+    "description": "私は<span class='text-orange-400 font-semibold text-lg md:text-2xl lg:text-lg'>{frontendDeveloper}</span>であり、<span class='text-orange-400 font-semibold text-lg md:text-2xl lg:text-lg'>{designer}</span>です。シンプルでユーザーフレンドリーで効率的で鮮やかなウェブサイトを作ることを楽しんでいます。"
   }
 }

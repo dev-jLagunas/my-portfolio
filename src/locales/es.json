@@ -3,12 +3,30 @@
     "mainProjects": "Proyectos Principales",
     "aboutMe": "Sobre Mí",
     "contact": "Ponerse en Contacto",
-    "language": "Idioma"
+    "lightMode": "Modo Claro",
+    "darkMode": "Modo Oscuro",
+    "language": "Idioma",
+    "english": "Inglés",
+    "spanish": "Español",
+    "japanese": "Japonés"
   },
   "sidebar": {
-    "howdy": "¡Hola!",
+    "howdy": "¡Hola",
     "myMainProjects": "Mis proyectos principales",
     "moreAboutMe": "Más sobre mí",
-    "getInTouch": "Ponerse en contacto"
+    "getInTouch": "Ponerse en contacto",
+    "lightMode": "Modo Claro",
+    "darkMode": "Modo Oscuro",
+    "language": "Idioma",
+    "english": "Inglés",
+    "spanish": "Español",
+    "japanese": "Japonés"
+  },
+  "hero": {
+    "projects": "Proyectos",
+    "imJuan": "Soy <span class='text-emerald-500'>Juan</span>",
+    "frontendDeveloper": "Desarrollador Frontend",
+    "designer": "Diseñador",
+    "description": "Soy un <span class='text-orange-400 font-semibold text-lg md:text-2xl lg:text-lg'>{frontendDeveloper}</span> y <span class='text-orange-400 font-semibold text-lg md:text-2xl lg:text-lg'>{designer}</span>. Disfruto creando sitios web simples, fáciles de usar, eficientes y vibrantes."
   }
 }
