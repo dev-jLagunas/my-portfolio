@@ -2,12 +2,8 @@ export const projectsData = [
   {
     id: "1",
     name: "Cafe Triangle",
-
+    projectKey: "cafeTriangle",
     taglineKey: "project1Tagline",
-    description: `Cafe Triangle was the first fully functioning hosted website I ever made.
-    When I first started learning web dev I made it my one year goal to create our shops website. This is the final project.
-    I especially love the vibrant but subdued user interface
-    `,
     mainScreenshot: "@/assets/screenshots/cafe-screenshot-main.jpg",
     images: {
       desktop: [
@@ -39,11 +35,8 @@ export const projectsData = [
   {
     id: "2",
     name: "Code Chicano",
-
+    projectKey: "codeChicano",
     taglineKey: "project2Tagline",
-    description: `Code Chicano is a fully functioning C.R.U.D application with Firebase as its backend. It is also made with a quill editor so
-    I am able to login and write new blog posts any time I want. The blog is fully responsive with many great features and funtionality.
-    `,
     mainScreenshot: "@/assets/screenshots/chicano-screenshot-main.jpg",
     images: {
       desktop: [
@@ -78,13 +71,8 @@ export const projectsData = [
   {
     id: "3",
     name: "Cosmic Neighborhood",
-
+    projectKey: "cosmicNeighborhood",
     taglineKey: "project3Tagline",
-    description: `Cosmic Neighborhood is an expanded and enhanced version of a Frontend Mentor challenge.
-    Users can explore the planets of our solar system in an interactive and informative
-    way. One of the standout features of this project is the interactive 3D models of the planets, created using Three.js.
-    Users can zoom in, view the planets from different angles, and engage with the models for a more dynamic experience.
-    `,
     mainScreenshot: "@/assets/screenshots/cosmic-screenshot-main.jpg",
     images: {
       desktop: [
@@ -115,12 +103,8 @@ export const projectsData = [
   {
     id: "4",
     name: "Horizontal Scroll Gallery",
-
+    projectKey: "horizontalScrollGallery",
     taglineKey: "project4Tagline",
-    description: `This was more of a passion project. For some reason I alway found horizontal scroll websites to be lovely.
-    So I decided to showcase my photography using GSAP scroll trigger and horizontal scroll which was much tricker than I expected.
-    The project was very time consuming but worth it in the end.
-    `,
     mainScreenshot: "@/assets/screenshots/gallery-screenshot-main.jpg",
     images: {
       desktop: [

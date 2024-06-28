@@ -1,12 +1,16 @@
 <script setup>
 import { ref, onMounted } from "vue";
 import { useRoute } from "vue-router";
+import { useI18n } from "vue-i18n";
 import { projectsData } from "@/data/projectsData.js";
 import NavButtons from "@/components/LinksBtnsContainer.vue";
 
+const { t } = useI18n();
 const route = useRoute();
 const project = ref(null);
 const resolvedImages = ref({});
+const technologies = ref([]);
+const features = ref([]);
 
 const images = import.meta.glob("@/assets/screenshots/*.{png,jpg,jpeg}", {
   eager: true,
@@ -21,6 +25,13 @@ onMounted(() => {
       const relativePath = path.replace("/src", "@");
       resolvedImages.value[relativePath] = images[path].default;
     }
+
+    technologies.value = t(
+      `projects.details.${project.value.projectKey}.technologies`
+    ).split(",");
+    features.value = t(
+      `projects.details.${project.value.projectKey}.features`
+    ).split(",");
   }
 });
 </script>
@@ -44,34 +55,36 @@ onMounted(() => {
           </button>
         </div>
         <section class="my-4 lg:w-4/5 lg:mx-auto">
-          <p class="project-details-titles md:text-3xl">Description</p>
-          <p>{{ project.description }}</p>
+          <p class="project-details-titles md:text-3xl">
+            {{ $t("projects.details.descriptionTitle") }}
+          </p>
+          <p>{{ t(`projects.details.${project.projectKey}.description`) }}</p>
         </section>
         <section>
-          <p class="project-details-titles md:text-3xl">Made Width</p>
+          <p class="project-details-titles md:text-3xl">
+            {{ $t("projects.details.madeWithTitle") }}
+          </p>
           <ul
             class="flex-center-col md:flex-row md:divide-x-2 md:divide-orange-400 mt-4"
           >
             <li
-              v-for="(technologies, index) in project.technologies"
+              v-for="(technology, index) in technologies"
               :key="index"
               class="pr-2 pl-2"
             >
-              {{ technologies }}
+              {{ technology }}
             </li>
           </ul>
         </section>
         <section class="mb-4">
-          <p class="project-details-titles mt-4 md:text-3xl">Features</p>
+          <p class="project-details-titles mt-4 md:text-3xl">
+            {{ $t("projects.details.featuresTitle") }}
+          </p>
           <ul
             class="flex-center-col text-center md:flex-row md:divide-x-2 md:divide-orange-400 md:flex-wrap mt-4"
           >
-            <li
-              v-for="(features, index) in project.features"
-              :key="index"
-              class="px-2"
-            >
-              {{ features }}
+            <li v-for="(feature, index) in features" :key="index" class="px-2">
+              {{ feature }}
             </li>
           </ul>
         </section>
@@ -81,7 +94,7 @@ onMounted(() => {
     <div class="lg:col-span-5 lg:overflow-y-auto lg:pr-2">
       <figure class="flex-center-col gap-4">
         <figcaption class="project-details-titles md:text-4xl">
-          Desktop
+          {{ $t("projects.details.desktopTitle") }}
         </figcaption>
         <img
           v-for="(image, index) in project.images.desktop"
@@ -91,7 +104,9 @@ onMounted(() => {
         />
       </figure>
       <div class="mt-4">
-        <p class="project-details-titles md:text-4xl mb-4">Mobile</p>
+        <p class="project-details-titles md:text-4xl mb-4">
+          {{ $t("projects.details.mobileTitle") }}
+        </p>
         <figure class="flex-center-col gap-4 md:flex-row lg:flex-wrap">
           <img
             v-for="(image, index) in project.images.mobile"

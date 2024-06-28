@@ -53,6 +53,33 @@
     "project1Tagline": "Cafe Triangle was a small cafe located in Kanazawa, Japan",
     "project2Tagline": "A blog about my experience as a Mexican-American self-taught programmer",
     "project3Tagline": "Cosmic Neighborhood is an immersive and interactive space-themed website",
-    "project4Tagline": "A horizontal scroll gallery filled with scroll triggered animations"
+    "project4Tagline": "A horizontal scroll gallery filled with scroll triggered animations",
+    "details": {
+      "descriptionTitle": "Description",
+      "madeWithTitle": "Made With",
+      "featuresTitle": "Features",
+      "desktopTitle": "Desktop",
+      "mobileTitle": "Mobile",
+      "cafeTriangle": {
+        "description": "Cafe Triangle was the first fully functioning hosted website I ever made. When I first started learning web dev I made it my one year goal to create our shops website. This is the final project. I especially love the vibrant but subdued user interface.",
+        "technologies": "Angular,Tailwind CSS,Flowbite",
+        "features": "Multi-lingual functionality for EN/JP/ES,Dark/Light Modes,Responsive Design,Optimized for Speed"
+      },
+      "codeChicano": {
+        "description": "Code Chicano is a fully functioning C.R.U.D application with Firebase as its backend. It is also made with a quill editor so I am able to login and write new blog posts any time I want. The blog is fully responsive with many great features and funtionality.",
+        "technologies": "Angular,Angular Material,SCSS,Firebase",
+        "features": "Firebase Authentication,Firebase Database,Quill Editor,A.I Generated Artwork,Dark/Light Modes,Responsive Design,Custom U.I. Components"
+      },
+      "cosmicNeighborhood": {
+        "description": "Cosmic Neighborhood is an expanded and enhanced version of a Frontend Mentor challenge. Users can explore the planets of our solar system in an interactive and informative way. One of the standout features of this project is the interactive 3D models of the planets, created using Three.js. Users can zoom in, view the planets from different angles, and engage with the models for a more dynamic experience.",
+        "technologies": "Vue,Tailwind CSS,Three Js",
+        "features": "Three JS 3D Models of Planets,Beautiful user interface,CSS animations"
+      },
+      "horizontalScrollGallery": {
+        "description": "This was more of a passion project. For some reason I always found horizontal scroll websites to be lovely. So I decided to showcase my photography using GSAP scroll trigger and horizontal scroll which was much trickier than I expected. The project was very time consuming but worth it in the end.",
+        "technologies": "Vite,Vanilla Javascript,GSAP Scroll Trigger",
+        "features": "Complex scroll trigger animations,Responsive design,Beautiful user interface"
+      }
+    }
   }
 }
