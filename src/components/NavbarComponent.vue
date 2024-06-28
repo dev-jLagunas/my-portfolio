@@ -1,4 +1,9 @@
 <script setup>
+import { ref } from "vue";
+
+// State
+const isLanguageModalVisible = ref(false);
+
 // Emits
 const emit = defineEmits(["darkModeToggled"]);
 
@@ -13,6 +18,16 @@ const props = defineProps({
     required: true,
   },
 });
+
+// Methods
+const toggleLanguageModal = () => {
+  isLanguageModalVisible.value = !isLanguageModalVisible.value;
+};
+
+const setLanguage = (lang) => {
+  console.log(`Language changed to: ${lang}`);
+  isLanguageModalVisible.value = false;
+};
 </script>
 
 <template>
@@ -32,7 +47,17 @@ const props = defineProps({
           {{ isDarkMode ? "Light Mode" : "Dark Mode" }}
         </button>
       </li>
-      <li class="nav-link-emerald"><button>Language</button></li>
+      <li class="nav-link-emerald relative">
+        <button @click="toggleLanguageModal">Language</button>
+        <div
+          v-if="isLanguageModalVisible"
+          class="absolute top-full right-0 mt-2 bg-emerald-500 px-6 py-2 rounded-tl-full rounded-br-full z-50 flex gap-2 text-sm divide-x-2"
+        >
+          <button @click="setLanguage('en')">English</button>
+          <button @click="setLanguage('es')" class="pl-2">Spanish</button>
+          <button @click="setLanguage('jp')" class="pl-2">Japanese</button>
+        </div>
+      </li>
     </ul>
   </nav>
 </template>

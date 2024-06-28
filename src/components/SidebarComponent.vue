@@ -1,5 +1,9 @@
 <script setup>
 import { useRouter } from "vue-router";
+import { ref } from "vue";
+
+// State
+const isLanguageModalVisible = ref(false);
 
 // Emits
 const emit = defineEmits(["closeSidebar", "darkModeToggled"]);
@@ -27,6 +31,16 @@ const navigateTo = (path) => {
   router.push(path);
   closeSidebar();
 };
+
+// Methods
+const toggleLanguageModal = () => {
+  isLanguageModalVisible.value = !isLanguageModalVisible.value;
+};
+
+const setLanguage = (lang) => {
+  console.log(`Language changed to: ${lang}`);
+  isLanguageModalVisible.value = false;
+};
 </script>
 
 <template>
@@ -53,10 +67,20 @@ const navigateTo = (path) => {
             {{ isDarkMode ? "Light Mode" : "Dark Mode" }}
           </button>
         </li>
-        <li class="nav-link-orange hover:scale-125 duration-150">Language</li>
+        <li class="nav-link-orange relative">
+          <button @click="toggleLanguageModal">Language</button>
+          <div
+            v-if="isLanguageModalVisible"
+            class="absolute top-full left-0 flex gap-2 mt-2 bg-orange-400 px-6 py-2 rounded-tr-full rounded-bl-full z-50 text-sm divide-x-2"
+          >
+            <button @click="setLanguage('en')">English</button>
+            <button @click="setLanguage('es')" class="pl-2">Spanish</button>
+            <button @click="setLanguage('jp')" class="pl-2">Japanese</button>
+          </div>
+        </li>
       </ul>
     </nav>
-    <button class="mt-4 hover:scale-110 duration-300" @click="closeSidebar">
+    <button class="mt-12 hover:scale-110 duration-300" @click="closeSidebar">
       <i class="fa-solid fa-times text-red-400 text-6xl"></i>
     </button>
   </aside>
