@@ -28,5 +28,25 @@
     "frontendDeveloper": "Desarrollador Frontend",
     "designer": "Diseñador",
     "description": "Soy un <span class='text-orange-400 font-semibold text-lg md:text-2xl lg:text-lg'>{frontendDeveloper}</span> y <span class='text-orange-400 font-semibold text-lg md:text-2xl lg:text-lg'>{designer}</span>. Disfruto creando sitios web simples, fáciles de usar, eficientes y vibrantes."
+  },
+  "aboutMeSpecialization": {
+    "title": "Especialización",
+    "paragraph1": "Me especializo en desarrollo front-end utilizando <span class='about-me-technologies'>Angular</span>, <span class='about-me-technologies'>Vue</span>, <span class='about-me-technologies'>Javascript</span> y <span class='about-me-technologies'>Typescript</span>. También me siento seguro trabajando con <span class='about-me-technologies'>CSS</span>, <span class='about-me-technologies'>SASS</span> y <span class='about-me-technologies'>Tailwind CSS</span>.",
+    "paragraph2": "He construido varios proyectos dinámicos y estoy emocionado de construir más! Tengo una experiencia diversa, incluyendo la propiedad de negocios, y hablo inglés, español y japonés con fluidez."
+  },
+  "contactMeInformation": {
+    "title": "Información",
+    "fullResume": "Currículum Completo"
+  },
+  "contactMeForm": {
+    "title": "Enviar un mensaje",
+    "nameLabel": "Nombre",
+    "emailLabel": "Correo electrónico",
+    "messageLabel": "Mensaje",
+    "submitButton": "Enviar"
+  },
+  "linksBtnsContainer": {
+    "home": "Inicio",
+    "contact": "Contacto"
   }
 }

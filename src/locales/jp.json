@@ -28,5 +28,25 @@
     "frontendDeveloper": "フロントエンド開発者",
     "designer": "デザイナー",
     "description": "私は<span class='text-orange-400 font-semibold text-lg md:text-2xl lg:text-lg'>{frontendDeveloper}</span>であり、<span class='text-orange-400 font-semibold text-lg md:text-2xl lg:text-lg'>{designer}</span>です。シンプルでユーザーフレンドリーで効率的で鮮やかなウェブサイトを作ることを楽しんでいます。"
+  },
+  "aboutMeSpecialization": {
+    "title": "専門",
+    "paragraph1": "私は<span class='about-me-technologies'>Angular</span>、<span class='about-me-technologies'>Vue</span>、<span class='about-me-technologies'>Javascript</span>、および<span class='about-me-technologies'>Typescript</span>を使用したフロントエンド開発を専門としています。また、<span class='about-me-technologies'>CSS</span>、<span class='about-me-technologies'>SASS</span>、および<span class='about-me-technologies'>Tailwind CSS</span>を使用した作業にも自信があります。",
+    "paragraph2": "いくつかのダイナミックなプロジェクトを構築してきましたし、もっと多くを構築することに興奮しています! ビジネス所有を含む多様なバックグラウンドを持ち、英語、スペイン語、日本語が流暢に話せます。"
+  },
+  "contactMeInformation": {
+    "title": "情報",
+    "fullResume": "履歴書"
+  },
+  "contactMeForm": {
+    "title": "メッセージを送る",
+    "nameLabel": "名前",
+    "emailLabel": "メール",
+    "messageLabel": "メッセージ",
+    "submitButton": "送信"
+  },
+  "linksBtnsContainer": {
+    "home": "ホーム",
+    "contact": "連絡先"
   }
 }

@@ -49,7 +49,7 @@ const toggleLanguageModal = () => {
         class="flex-start-col gap-4 text-2xl text-slate-600 dark:text-slate-200 hover:cursor-pointer"
       >
         <li class="text-6xl mb-4 text-emerald-500 font-pacifico pl-8">
-          Howdy<span class="text-orange-400">!</span>
+          {{ $t("sidebar.howdy") }}<span class="text-orange-400">!</span>
         </li>
         <li class="nav-link-orange hover:scale-125 duration-150">
           <button @click="navigateTo('/')">
@@ -57,29 +57,36 @@ const toggleLanguageModal = () => {
           </button>
         </li>
         <li class="nav-link-emerald hover:scale-125 duration-150">
-          <button @click="navigateTo('/about')">More about me</button>
+          <button @click="navigateTo('/about')">
+            {{ $t("sidebar.moreAboutMe") }}
+          </button>
         </li>
-
         <li class="nav-link-orange hover:scale-125 duration-150">
-          <button @click="navigateTo('/contact')">Get in touch</button>
+          <button @click="navigateTo('/contact')">
+            {{ $t("sidebar.getInTouch") }}
+          </button>
         </li>
         <li class="nav-link-emerald hover:scale-125 duration-150">
           <button @click="toggleDarkMode">
-            {{ isDarkMode ? "Light Mode" : "Dark Mode" }}
+            {{ isDarkMode ? $t("sidebar.lightMode") : $t("sidebar.darkMode") }}
           </button>
         </li>
         <li class="nav-link-orange relative">
-          <button @click="toggleLanguageModal">Language</button>
+          <button @click="toggleLanguageModal">
+            {{ $t("sidebar.language") }}
+          </button>
           <div
             v-if="isLanguageModalVisible"
             class="absolute top-full left-0 flex gap-2 mt-2 bg-orange-400 px-6 py-2 rounded-tr-full rounded-bl-full z-50 text-sm divide-x-2"
           >
-            <button @click="$emit('change-language', 'en')">English</button>
+            <button @click="$emit('change-language', 'en')">
+              {{ $t("sidebar.english") }}
+            </button>
             <button @click="$emit('change-language', 'es')" class="pl-2">
-              Spanish
+              {{ $t("sidebar.spanish") }}
             </button>
             <button @click="$emit('change-language', 'jp')" class="pl-2">
-              Japanese
+              {{ $t("sidebar.japanese") }}
             </button>
           </div>
         </li>

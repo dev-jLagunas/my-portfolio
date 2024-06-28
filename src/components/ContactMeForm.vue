@@ -2,13 +2,15 @@
 
 <template>
   <div class="primary-font-colors font-poppins">
-    <h2 class="text-center text-4xl font-bold">Send a message</h2>
+    <h2 class="text-center text-4xl font-bold">
+      {{ $t("contactMeForm.title") }}
+    </h2>
     <form class="w-full">
-      <label for="name" class="">Name</label>
-      <input type="text" class="w-full border-b" />
-      <label for="email">Email</label>
-      <input type="email" class="w-full border-b" />
-      <label for="message">Message</label>
+      <label for="name">{{ $t("contactMeForm.nameLabel") }}</label>
+      <input type="text" id="name" class="w-full border-b" />
+      <label for="email">{{ $t("contactMeForm.emailLabel") }}</label>
+      <input type="email" id="email" class="w-full border-b" />
+      <label for="message">{{ $t("contactMeForm.messageLabel") }}</label>
       <textarea
         name="message"
         id="message"
@@ -16,7 +18,9 @@
         rows="10"
         class="w-full border-b"
       ></textarea>
-      <button class="bg-emerald-500 text-white w-full">Submit</button>
+      <button class="bg-emerald-500 text-white w-full">
+        {{ $t("contactMeForm.submitButton") }}
+      </button>
     </form>
   </div>
 </template>
