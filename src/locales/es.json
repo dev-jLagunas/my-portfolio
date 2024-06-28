@@ -1,0 +1,14 @@
+{
+  "nav": {
+    "mainProjects": "Proyectos Principales",
+    "aboutMe": "Sobre Mí",
+    "contact": "Ponerse en Contacto",
+    "language": "Idioma"
+  },
+  "sidebar": {
+    "howdy": "¡Hola!",
+    "myMainProjects": "Mis proyectos principales",
+    "moreAboutMe": "Más sobre mí",
+    "getInTouch": "Ponerse en contacto"
+  }
+}

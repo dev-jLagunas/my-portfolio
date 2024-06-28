@@ -1,0 +1,14 @@
+{
+  "nav": {
+    "mainProjects": "Main Projects",
+    "aboutMe": "About Me",
+    "contact": "Get In Touch",
+    "language": "Language"
+  },
+  "sidebar": {
+    "howdy": "Howdy!",
+    "myMainProjects": "My main projects",
+    "moreAboutMe": "More about me",
+    "getInTouch": "Get in touch"
+  }
+}

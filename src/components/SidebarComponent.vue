@@ -6,7 +6,11 @@ import { ref } from "vue";
 const isLanguageModalVisible = ref(false);
 
 // Emits
-const emit = defineEmits(["closeSidebar", "darkModeToggled"]);
+const emit = defineEmits([
+  "closeSidebar",
+  "darkModeToggled",
+  "change-language",
+]);
 
 const closeSidebar = () => {
   emit("closeSidebar");
@@ -36,11 +40,6 @@ const navigateTo = (path) => {
 const toggleLanguageModal = () => {
   isLanguageModalVisible.value = !isLanguageModalVisible.value;
 };
-
-const setLanguage = (lang) => {
-  console.log(`Language changed to: ${lang}`);
-  isLanguageModalVisible.value = false;
-};
 </script>
 
 <template>
@@ -53,7 +52,9 @@ const setLanguage = (lang) => {
           Howdy<span class="text-orange-400">!</span>
         </li>
         <li class="nav-link-orange hover:scale-125 duration-150">
-          <button @click="navigateTo('/')">My main projects</button>
+          <button @click="navigateTo('/')">
+            {{ $t("sidebar.myMainProjects") }}
+          </button>
         </li>
         <li class="nav-link-emerald hover:scale-125 duration-150">
           <button @click="navigateTo('/about')">More about me</button>
@@ -73,9 +74,13 @@ const setLanguage = (lang) => {
             v-if="isLanguageModalVisible"
             class="absolute top-full left-0 flex gap-2 mt-2 bg-orange-400 px-6 py-2 rounded-tr-full rounded-bl-full z-50 text-sm divide-x-2"
           >
-            <button @click="setLanguage('en')">English</button>
-            <button @click="setLanguage('es')" class="pl-2">Spanish</button>
-            <button @click="setLanguage('jp')" class="pl-2">Japanese</button>
+            <button @click="$emit('change-language', 'en')">English</button>
+            <button @click="$emit('change-language', 'es')" class="pl-2">
+              Spanish
+            </button>
+            <button @click="$emit('change-language', 'jp')" class="pl-2">
+              Japanese
+            </button>
           </div>
         </li>
       </ul>

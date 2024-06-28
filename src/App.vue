@@ -1,5 +1,6 @@
 <script setup>
 import { ref } from "vue";
+import { useI18n } from "vue-i18n";
 import Navbar from "@/components/NavbarComponent.vue";
 import Sidebar from "@/components/SidebarComponent.vue";
 import Header from "@/components/HeaderComponent.vue";
@@ -8,6 +9,13 @@ import QuickLinks from "@/components/QuickAccessComponent.vue";
 // State
 const toggleSidebar = ref(false);
 const isDarkMode = ref(false);
+
+// I18n
+const { locale } = useI18n();
+
+const setLanguage = (lang) => {
+  locale.value = lang;
+};
 
 // Methods
 const toggleDarkMode = () => {
@@ -34,11 +42,13 @@ const toggleDarkMode = () => {
           v-if="toggleSidebar"
           :isDarkMode="isDarkMode"
           @darkModeToggled="toggleDarkMode"
+          @change-language="setLanguage"
           @closeSidebar="toggleSidebar = false"
         />
       </transition>
     </div>
     <Navbar
+      @change-language="setLanguage"
       @darkModeToggled="toggleDarkMode"
       :isDarkMode="isDarkMode"
       class="hidden md:block"

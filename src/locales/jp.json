@@ -1,0 +1,14 @@
+{
+  "nav": {
+    "mainProjects": "主なプロジェクト",
+    "aboutMe": "私について",
+    "contact": "連絡を取る",
+    "language": "言語"
+  },
+  "sidebar": {
+    "howdy": "こんにちは！",
+    "myMainProjects": "私の主なプロジェクト",
+    "moreAboutMe": "私についてもっと",
+    "getInTouch": "連絡を取る"
+  }
+}
