@@ -40,6 +40,11 @@ const navigateTo = (path) => {
 const toggleLanguageModal = () => {
   isLanguageModalVisible.value = !isLanguageModalVisible.value;
 };
+
+const setLanguage = (lang) => {
+  emit("change-language", lang);
+  isLanguageModalVisible.value = false;
+};
 </script>
 
 <template>
@@ -79,13 +84,13 @@ const toggleLanguageModal = () => {
             v-if="isLanguageModalVisible"
             class="absolute top-full left-0 flex gap-2 mt-2 bg-orange-400 px-6 py-2 rounded-tr-full rounded-bl-full z-50 text-sm divide-x-2"
           >
-            <button @click="$emit('change-language', 'en')">
+            <button @click="setLanguage('en')">
               {{ $t("sidebar.english") }}
             </button>
-            <button @click="$emit('change-language', 'es')" class="pl-2">
+            <button @click="setLanguage('es')" class="pl-2">
               {{ $t("sidebar.spanish") }}
             </button>
-            <button @click="$emit('change-language', 'jp')" class="pl-2">
+            <button @click="setLanguage('jp')" class="pl-2">
               {{ $t("sidebar.japanese") }}
             </button>
           </div>

@@ -23,6 +23,11 @@ const props = defineProps({
 const toggleLanguageModal = () => {
   isLanguageModalVisible.value = !isLanguageModalVisible.value;
 };
+
+const setLanguage = (lang) => {
+  emit("change-language", lang);
+  isLanguageModalVisible.value = false;
+};
 </script>
 
 <template>
@@ -48,13 +53,11 @@ const toggleLanguageModal = () => {
           v-if="isLanguageModalVisible"
           class="absolute top-full right-0 mt-2 bg-emerald-500 px-6 py-2 rounded-tl-full rounded-br-full z-50 flex gap-2 text-sm divide-x-2"
         >
-          <button @click="$emit('change-language', 'en')">
-            {{ $t("nav.english") }}
-          </button>
-          <button @click="$emit('change-language', 'es')" class="pl-2">
+          <button @click="setLanguage('en')">{{ $t("nav.english") }}</button>
+          <button @click="setLanguage('es')" class="pl-2">
             {{ $t("nav.spanish") }}
           </button>
-          <button @click="$emit('change-language', 'jp')" class="pl-2">
+          <button @click="setLanguage('jp')" class="pl-2">
             {{ $t("nav.japanese") }}
           </button>
         </div>
