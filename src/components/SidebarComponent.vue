@@ -82,7 +82,7 @@ const setLanguage = (lang) => {
           </button>
           <div
             v-if="isLanguageModalVisible"
-            class="absolute top-full left-0 flex gap-2 mt-2 bg-orange-400 px-6 py-2 rounded-tr-full rounded-bl-full z-50 text-sm divide-x-2"
+            class="absolute top-full left-0 flex gap-2 mt-2 bg-orange-400 px-6 py-2 rounded-tr-full rounded-bl-full z-50 text-sm divide-x-2 text-slate-600 dark:text-slate-200"
           >
             <button @click="setLanguage('en')">
               {{ $t("sidebar.english") }}
