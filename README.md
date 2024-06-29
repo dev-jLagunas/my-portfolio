@@ -24,7 +24,7 @@ the user experience. I strived towards making the site easy to understand and na
 
 <p float="left">
   <img src="src/assets/screenshots/portfolio-desktop-screenshot.png" width="auto" alt="Desktop screenshot">
-  <img src="src/assets/screenshots/portfolio-mobile-screenshot.png" width="auto" alt="Mobile screenshot">
+  <img src="src/assets/screenshots/portfolio-mobile-screenshot.png" width="300px" alt="Mobile screenshot">
 </p>
 
 ## Recommended IDE Setup
@@ -64,6 +64,7 @@ For more of my work, check out my [GitHub profile](https://github.com/dev-jLagun
 ## Acknowledgements
 
 - Thanks to [Vue](https://vuejs.org/)
-- Thanks to [Frontend Mentor](https://www.frontendmentor.io/) for providing great projects to learn frontend development.
+- Thanks to [ZachHayes](https://zchry.org/) for the inspiration I got from his site.
 - Thanks to all the contributors who have helped with this project.
+- Thanks to anyone who takes the come to checkout my work.
 - Thanks to my wife for giving me the opportunity to spend so much time in front of a computer.
