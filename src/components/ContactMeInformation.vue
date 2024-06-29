@@ -7,12 +7,13 @@
     </h2>
     <ul>
       <li>
-        <i class="fas fa-map-marker-alt contact-icon-styles"></i>Fake Address,
-        9999 City
+        <i class="fas fa-map-marker-alt contact-icon-styles"></i>Hakusan City,
+        Ishikawa, Japan
       </li>
-      <li><i class="fas fa-phone contact-icon-styles"></i>12345678</li>
+      <li><i class="fas fa-phone contact-icon-styles"></i>080-9533-4142</li>
       <li>
-        <i class="fas fa-envelope contact-icon-styles"></i>email@example.com
+        <i class="fas fa-envelope contact-icon-styles"></i
+        >dev.jlagunas@gmail.com
       </li>
       <li>
         <i class="fa-solid fa-file contact-icon-styles"></i

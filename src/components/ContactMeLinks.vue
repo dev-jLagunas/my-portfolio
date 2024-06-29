@@ -5,7 +5,7 @@
     <ul class="flex justify-center gap-4 text-slate-100 text-lg py-1 md:px-8">
       <li>
         <a
-          href="https://github.com/yourusername"
+          href="https://github.com/dev-jLagunas"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -14,7 +14,7 @@
       </li>
       <li>
         <a
-          href="https://linkedin.com/in/yourusername"
+          href="https://www.linkedin.com/in/juan-lagunas-a14b0a2a8/"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -23,7 +23,7 @@
       </li>
       <li>
         <a
-          href="https://leetcode.com/yourusername"
+          href="https://leetcode.com/u/Solidjuan/"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -32,7 +32,7 @@
       </li>
       <li>
         <a
-          href="https://frontendmentor.io/profile/yourusername"
+          href="https://www.frontendmentor.io/profile/dev-jLagunas"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -41,11 +41,11 @@
       </li>
       <li>
         <a
-          href="https://unsplash.com/@yourusername"
+          href="https://www.instagram.com/j.lag_works/"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <i class="fab fa-unsplash"></i>
+          <i class="fa-brands fa-instagram"></i>
         </a>
       </li>
     </ul>
