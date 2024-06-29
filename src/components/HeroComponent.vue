@@ -14,7 +14,7 @@ import LinkButtons from "@/components/LinksBtnsContainer.vue";
       </span>
     </h3>
     <h1
-      class="text-6xl font-bold text-slate-800 dark:text-slate-200 text-center md:absolute md:top-16 md:left-80 lg:static"
+      class="text-6xl font-bold text-slate-800 dark:text-slate-200 text-center md:absolute md:text-4xl md:top-16 md:left-80 lg:static"
     >
       <span v-html="$t('hero.imJuan')"></span>
     </h1>
