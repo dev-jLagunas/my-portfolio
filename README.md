@@ -23,8 +23,8 @@ the user experience. I strived towards making the site easy to understand and na
 ### Desktop
 
 <p float="left">
-  <img src="src/assets/screenshots/portfolio-desktop-screenshot.png" width="auto" alt="Desktop screenshot">
-  <img src="src/assets/screenshots/portfolio-mobile-screenshot.png" width="300px" alt="Mobile screenshot">
+  <img src="src/assets/screenshots/portfolio-screenshot-main.jpg" width="auto" alt="Desktop screenshot">
+  <img src="src/assets/screenshots/portfolio-mobile-screenshot-main.png" width="300px" alt="Mobile screenshot">
 </p>
 
 ## Recommended IDE Setup
