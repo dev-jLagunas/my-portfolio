@@ -54,6 +54,7 @@
     "project2Tagline": "A blog about my experience as a Mexican-American self-taught programmer",
     "project3Tagline": "Cosmic Neighborhood is an immersive and interactive space-themed website",
     "project4Tagline": "A horizontal scroll gallery filled with scroll triggered animations",
+    "project5Tagline": "My multi-lingual jr frontend developer portfolio website",
     "details": {
       "descriptionTitle": "Description",
       "madeWithTitle": "Made With",
@@ -79,6 +80,11 @@
         "description": "This was more of a passion project. For some reason I always found horizontal scroll websites to be lovely. So I decided to showcase my photography using GSAP scroll trigger and horizontal scroll which was much trickier than I expected. The project was very time consuming but worth it in the end.",
         "technologies": "Vite,Vanilla Javascript,GSAP Scroll Trigger",
         "features": "Complex scroll trigger animations,Responsive design,Beautiful user interface"
+      },
+      "myPortfolioSite": {
+        "description": "I tried to give my portfolio site a colorful but simple and informative user interface. Visitors of my site are also able to toggle dark mode, browse in English, Spanish, or Japanese. Furthermore, I paid great attention to making sure the site was easily understandable and informative to prospective hirers.",
+        "technologies": "Vue, Tailwind CSS, Vue I18n",
+        "features": "Responsive design, multi-lingual functionality, beautiful and informative user interface, proper semantic HTML for good accessibility"
       }
     }
   }

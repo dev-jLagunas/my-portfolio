@@ -132,4 +132,37 @@ export const projectsData = [
         "This code snippet shows how we initialize the main Vue instance and configure the router. The second image shows the setup of the state management using Vuex.",
     },
   },
+  {
+    id: "5",
+    name: "My Portfolio Site",
+    projectKey: "myPortfolioSite",
+    taglineKey: "project5Tagline",
+    mainScreenshot: "@/assets/screenshots/portfolio-screenshot-main.jpg",
+    images: {
+      desktop: [
+        "@/assets/screenshots/portfolio-desktop-shot-1.png",
+        "@/assets/screenshots/portfolio-desktop-shot-2.png",
+        "@/assets/screenshots/portfolio-desktop-shot-3.png",
+      ],
+      mobile: [
+        "@/assets/screenshots/portfolio-mobile-shot-1.png",
+        "@/assets/screenshots/portfolio-mobile-shot-2.png",
+        "@/assets/screenshots/portfolio-mobile-shot-3.png",
+      ],
+    },
+    technologies: ["Vue", "Tailwind CSS", "Vue I18n"],
+    features: [
+      "responsive design",
+      "informative user interface",
+      "multi-lingual functionality with VueI18n",
+      "proper usage semantic HTML for better accessibility",
+    ],
+    github: "https://github.com/dev-jLagunas/my-portfolio",
+    liveDemo: "https://dev-jlagunas.github.io/my-portfolio/",
+    codeSample: {
+      images: ["code_image1.jpg", "code_image2.jpg"],
+      explanation:
+        "This code snippet shows how we initialize the main Vue instance and configure the router. The second image shows the setup of the state management using Vuex.",
+    },
+  },
 ];

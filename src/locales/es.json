@@ -54,6 +54,7 @@
     "project2Tagline": "Un blog sobre mi experiencia como programador autodidacta mexicano-americano",
     "project3Tagline": "Cosmic Neighborhood es un sitio web temático del espacio inmersivo e interactivo",
     "project4Tagline": "Una galería de desplazamiento horizontal llena de animaciones activadas por desplazamiento",
+    "project5Tageline": "Mi sitio web de portafolio como desarrollador frontend junior multilingüe",
     "details": {
       "descriptionTitle": "Descripción",
       "madeWithTitle": "Hecho con",
@@ -61,45 +62,19 @@
       "desktopTitle": "Escritorio",
       "mobileTitle": "Móvil",
       "cafeTriangle": {
-        "description": "Cafe Triangle fue el primer sitio web completamente funcional que hice. Cuando comencé a aprender desarrollo web, me propuse como objetivo de un año crear el sitio web de nuestra tienda. Este es el proyecto final. Me encanta especialmente la interfaz de usuario vibrante pero sutil.",
-        "technologies": ["Angular", "Tailwind CSS", "Flowbite"],
-        "features": [
-          "Funcionalidad multilingüe para EN/JP/ES",
-          "Modos oscuro/claro",
-          "Diseño responsive",
-          "Optimizado para velocidad"
-        ]
+        "description": "Cafe Triangle fue el primer sitio web completamente funcional que hice. Cuando comencé a aprender desarrollo web, me propuse como objetivo de un año crear el sitio web de nuestra tienda. Este es el proyecto final. Me encanta especialmente la interfaz de usuario vibrante pero sutil."
       },
       "codeChicano": {
-        "description": "Code Chicano es una aplicación C.R.U.D completamente funcional con Firebase como su backend. También está hecho con un editor de plumas para que pueda iniciar sesión y escribir nuevas publicaciones en el blog en cualquier momento. El blog es completamente responsive con muchas características y funcionalidades geniales.",
-        "technologies": ["Angular", "Angular Material", "SCSS", "Firebase"],
-        "features": [
-          "Autenticación de Firebase",
-          "Base de datos de Firebase",
-          "Editor Quill",
-          "Arte generado por IA",
-          "Modos oscuro/claro",
-          "Diseño responsive",
-          "Componentes de interfaz de usuario personalizados"
-        ]
+        "description": "Code Chicano es una aplicación C.R.U.D completamente funcional con Firebase como su backend. También está hecho con un editor de plumas para que pueda iniciar sesión y escribir nuevas publicaciones en el blog en cualquier momento. El blog es completamente responsive con muchas características y funcionalidades geniales."
       },
       "cosmicNeighborhood": {
-        "description": "Cosmic Neighborhood es una versión ampliada y mejorada de un desafío de Frontend Mentor. Los usuarios pueden explorar los planetas de nuestro sistema solar de una manera interactiva e informativa. Una de las características destacadas de este proyecto son los modelos 3D interactivos de los planetas, creados con Three.js. Los usuarios pueden hacer zoom, ver los planetas desde diferentes ángulos e interactuar con los modelos para una experiencia más dinámica.",
-        "technologies": ["Vue", "Tailwind CSS", "Three Js"],
-        "features": [
-          "Modelos 3D de planetas con Three JS",
-          "Interfaz de usuario hermosa",
-          "Animaciones CSS"
-        ]
+        "description": "Cosmic Neighborhood es una versión ampliada y mejorada de un desafío de Frontend Mentor. Los usuarios pueden explorar los planetas de nuestro sistema solar de una manera interactiva e informativa. Una de las características destacadas de este proyecto son los modelos 3D interactivos de los planetas, creados con Three.js. Los usuarios pueden hacer zoom, ver los planetas desde diferentes ángulos e interactuar con los modelos para una experiencia más dinámica."
       },
       "horizontalScrollGallery": {
-        "description": "Este fue más un proyecto de pasión. Por alguna razón, siempre encontré encantadores los sitios web de desplazamiento horizontal. Así que decidí mostrar mi fotografía usando GSAP scroll trigger y desplazamiento horizontal, lo cual fue mucho más complicado de lo que esperaba. El proyecto fue muy laborioso pero valió la pena al final.",
-        "technologies": ["Vite", "Javascript puro", "GSAP Scroll Trigger"],
-        "features": [
-          "Animaciones complejas de disparo de desplazamiento",
-          "Diseño responsive",
-          "Interfaz de usuario hermosa"
-        ]
+        "description": "Este fue más un proyecto de pasión. Por alguna razón, siempre encontré encantadores los sitios web de desplazamiento horizontal. Así que decidí mostrar mi fotografía usando GSAP scroll trigger y desplazamiento horizontal, lo cual fue mucho más complicado de lo que esperaba. El proyecto fue muy laborioso pero valió la pena al final."
+      },
+      "myPortfolioSite": {
+        "description": "Traté de darle a mi sitio web de portafolio una interfaz de usuario colorida pero simple e informativa. Los visitantes de mi sitio también pueden alternar el modo oscuro, navegar en inglés, español o japonés. Además, presté mucha atención para asegurarme de que el sitio fuera fácilmente comprensible e informativo para los posibles empleadores."
       }
     }
   }
