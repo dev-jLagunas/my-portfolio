@@ -71,12 +71,15 @@ const setLanguage = (lang) => {
             {{ $t("sidebar.getInTouch") }}
           </button>
         </li>
-        <li class="nav-link-emerald hover:scale-125 duration-150">
+        <li class="nav-link-emerald">
+          <button @click="navigateTo('/early-projects')">Early Work</button>
+        </li>
+        <li class="nav-link-orange hover:scale-125 duration-150">
           <button @click="toggleDarkMode">
             {{ isDarkMode ? $t("sidebar.lightMode") : $t("sidebar.darkMode") }}
           </button>
         </li>
-        <li class="nav-link-orange relative">
+        <li class="nav-link-emerald relative">
           <button @click="toggleLanguageModal">
             {{ $t("sidebar.language") }}
           </button>

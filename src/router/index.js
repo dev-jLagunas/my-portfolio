@@ -4,7 +4,7 @@ const HomeView = () => import("@/views/HomeView.vue");
 const AboutMeView = () => import("@/views/AboutMeView.vue");
 const ContactMeView = () => import("@/views/ContactMeView.vue");
 const ProjectDetailsView = () => import("@/views/ProjectDetailsView.vue");
-
+const EarlyProjectsView = () => import("@/views/EarlyProjectsView.vue");
 const router = createRouter({
   history: createWebHashHistory(),
   routes: [
@@ -28,6 +28,11 @@ const router = createRouter({
       name: "project-details",
       component: ProjectDetailsView,
       props: true,
+    },
+    {
+      path: "/early-projects",
+      name: "early-projects",
+      component: EarlyProjectsView,
     },
     {
       path: "/:pathMatch(.*)",

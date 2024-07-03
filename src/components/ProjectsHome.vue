@@ -70,7 +70,7 @@ onMounted(() => {
       </figure>
     </div>
   </section>
-  <div class="lg:col-span-2">
+  <div class="lg:col-span-2 text-center md:py-4">
     <h3 class="text-4xl font-pacifico text-emerald-500 text-center lg:text-6xl">
       More to Come<span class="text-orange-400">!</span>
     </h3>

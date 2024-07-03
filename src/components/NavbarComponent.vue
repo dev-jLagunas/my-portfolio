@@ -43,11 +43,14 @@ const setLanguage = (lang) => {
         <router-link to="/contact">{{ $t("nav.contact") }}</router-link>
       </li>
       <li class="nav-link-orange">
+        <router-link to="/early-projects">Early Work</router-link>
+      </li>
+      <li class="nav-link-emerald">
         <button @click="toggleDarkMode">
           {{ isDarkMode ? $t("nav.lightMode") : $t("nav.darkMode") }}
         </button>
       </li>
-      <li class="nav-link-emerald relative">
+      <li class="nav-link-orange relative">
         <button @click="toggleLanguageModal">{{ $t("nav.language") }}</button>
         <div
           v-if="isLanguageModalVisible"
