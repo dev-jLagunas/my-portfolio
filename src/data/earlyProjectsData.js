@@ -101,7 +101,8 @@ export const earlyProjectsData = [
     id: "6",
     name: "Pixel Art Generator App",
     projectKey: "pixelArt",
-    taglineKey: "pixelArt",
+    taglineKey:
+      "This is a simple pixel art generator users can draw pixel art with on different grids",
     mainScreenshot: "@/assets/early-projects/pixel-art-gen-screenshot.png",
     technologies: ["Vanilla Javascript", "SCSS", "Vite"],
     features: [
