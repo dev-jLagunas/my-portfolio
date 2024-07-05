@@ -72,7 +72,9 @@ const setLanguage = (lang) => {
           </button>
         </li>
         <li class="nav-link-emerald">
-          <button @click="navigateTo('/early-projects')">Early Work</button>
+          <button @click="navigateTo('/early-projects')">
+            {{ $t("sidebar.earlyWork") }}
+          </button>
         </li>
         <li class="nav-link-orange hover:scale-125 duration-150">
           <button @click="toggleDarkMode">
