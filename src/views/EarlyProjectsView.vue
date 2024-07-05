@@ -38,7 +38,7 @@ onMounted(() => {
         </a>
       </div>
 
-      <figure>
+      <figure class="custom-shadow">
         <img
           :src="resolvedImages[project.mainScreenshot]"
           alt="main screenshot"
@@ -57,13 +57,20 @@ onMounted(() => {
           </ul>
         </figcaption>
       </figure>
-      <ul class="text-sm mt-4 divide-y-2 divide-orange-400 lg:text-base">
+      <ul
+        class="text-sm mt-4 text-slate-600 w-full text-center dark:text-slate-200"
+      >
         <li v-for="(feature, index) in project.features" :key="index">
-          {{ feature }}
+          <i class="fa-regular fa-hand-point-right pr-2 text-orange-400"></i
+          >{{ feature }}
         </li>
       </ul>
     </div>
   </section>
 </template>
 
-<style lang="sass" scoped></style>
+<style scoped>
+.custom-shadow {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+</style>
