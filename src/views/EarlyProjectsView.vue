@@ -1,7 +1,9 @@
 <script setup>
 import { ref, onMounted } from "vue";
+import { useI18n } from "vue-i18n";
 import { earlyProjectsData } from "@/data/earlyProjectsData.js";
 
+const { t } = useI18n();
 const projects = ref(earlyProjectsData);
 const resolvedImages = ref({});
 
@@ -28,7 +30,9 @@ onMounted(() => {
       class="flex-center-col font-poppins text-slate-700 dark:text-slate-200 mb-16"
     >
       <h2 class="font-bold text-4xl text-center">{{ project.name }}</h2>
-      <p class="text-center my-2">{{ project.taglineKey }}</p>
+      <p class="text-center my-2">
+        {{ t(`earlyProjects.${project.taglineKey}`) }}
+      </p>
       <div class="text-3xl w-full flex justify-center gap-8">
         <a :href="project.github">
           <button><i class="fa-brands fa-github"></i></button>
@@ -58,11 +62,10 @@ onMounted(() => {
         </figcaption>
       </figure>
       <ul
-        class="text-sm mt-4 text-slate-600 w-full text-center dark:text-slate-200"
+        class="text-sm mt-4 text-slate-700 w-full text-start dark:text-slate-200"
       >
         <li v-for="(feature, index) in project.features" :key="index">
-          <i class="fa-regular fa-hand-point-right pr-2 text-orange-400"></i
-          >{{ feature }}
+          <i class="fa-solid fa-circle text-orange-400 pr-2"></i>{{ feature }}
         </li>
       </ul>
     </div>

@@ -79,5 +79,17 @@
         "description": "Traté de darle a mi sitio web de portafolio una interfaz de usuario colorida pero simple e informativa. Los visitantes de mi sitio también pueden alternar el modo oscuro, navegar en inglés, español o japonés. Además, presté mucha atención para asegurarme de que el sitio fuera fácilmente comprensible e informativo para los posibles empleadores."
       }
     }
+  },
+  "earlyProjects": {
+    "project1Tagline": "Un desafío de proyecto de lista de tareas en vanilla javascript de Frontend Mentor",
+    "project2Tagline": "Este es un proyecto de temporizador de cuenta regresiva animado 'flip' de Frontend Mentor",
+    "project3Tagline": "Una versión de cinco jugadores del desafío de proyecto de piedra, papel o tijera de Frontend Mentor",
+    "project4Tagline": "Proyecto de juego de Tik Tak Toe para dos jugadores con tema de neón",
+    "project5Tagline": "Este proyecto utiliza datos estáticos de países para mostrar información sobre todos los países del mundo",
+    "project6Tagline": "Este es un generador de arte de píxeles simple en el que los usuarios pueden dibujar arte de píxeles en diferentes cuadrículas",
+    "project7Tagline": "Un proyecto de desafío de página de destino receptiva de Frontend Mentor",
+    "project8Tagline": "Un desafío de proyecto de calculadora de propinas de Frontend Mentor",
+    "project9Tagline": "Este es un desafío de proyecto de listado y filtrado de empleos de Frontend Mentor",
+    "project10Tagline": "Un simple desafío de aplicación generadora de consejos de Frontend Mentor"
   }
 }

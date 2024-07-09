@@ -89,5 +89,17 @@
         "features": "Responsive design, multi-lingual functionality, beautiful and informative user interface, proper semantic HTML for good accessibility"
       }
     }
+  },
+  "earlyProjects": {
+    "project1Tagline": "A vanilla javascript to do list app project challenge from Frontend Mentor",
+    "project2Tagline": "This is a 'flip' clock animated countdown timer project from Frontend Mentor",
+    "project3Tagline": "A five player version of rock paper scissors project challenge from Frontend Mentor",
+    "project4Tagline": "Neon glow themed two player Tik Tak Toe game project",
+    "project5Tagline": "This projects uses static countries data to display info on all of the worlds countries",
+    "project6Tagline": "This is a simple pixel art generator users can draw pixel art with on different grids",
+    "project7Tagline": "A responsive landing page challenge project from Frontend Mentor",
+    "project8Tagline": "A tip calculator project challenge from Frontend Mentor",
+    "project9Tagline": "This is a job listing and filtering challenge project from Frontend Mentor",
+    "project10Tagline": "A simple advice generator app challenge from Frontend Mentor"
   }
 }

@@ -79,5 +79,17 @@
         "description": "私のポートフォリオサイトには、カラフルでありながらシンプルで情報豊富なユーザーインターフェースを提供しようとしました。訪問者はダークモードを切り替え、英語、スペイン語、日本語で閲覧することができます。さらに、サイトが将来の雇用主にとってわかりやすく、情報豊富であるようにすることに非常に注意を払いました。"
       }
     }
+  },
+  "earlyProjects": {
+    "project1Tagline": "Frontend MentorのバニラJavaScriptのTo Doリストアプリプロジェクトチャレンジ",
+    "project2Tagline": "これはFrontend Mentorの「フリップ」時計アニメーションカウントダウンタイマープロジェクトです",
+    "project3Tagline": "Frontend Mentorの5人プレイバージョンのじゃんけんプロジェクトチャレンジ",
+    "project4Tagline": "ネオングローをテーマにした2人用のTik Tak Toeゲームプロジェクト",
+    "project5Tagline": "このプロジェクトは静的な国データを使用して、世界中のすべての国の情報を表示します",
+    "project6Tagline": "これは、ユーザーが異なるグリッドでピクセルアートを描くことができるシンプルなピクセルアートジェネレータです",
+    "project7Tagline": "Frontend Mentorのレスポンシブランディングページチャレンジプロジェクト",
+    "project8Tagline": "Frontend Mentorのチップ計算機プロジェクトチャレンジ",
+    "project9Tagline": "これはFrontend Mentorのジョブリストとフィルタリングチャレンジプロジェクトです",
+    "project10Tagline": "Frontend Mentorのシンプルなアドバイスジェネレーターアプリチャレンジ"
   }
 }
