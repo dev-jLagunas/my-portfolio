@@ -57,6 +57,7 @@
     "project3Tagline": "Cosmic Neighborhood es un sitio web temático del espacio inmersivo e interactivo",
     "project4Tagline": "Una galería de desplazamiento horizontal llena de animaciones activadas por desplazamiento",
     "project5Tagline": "Mi sitio web de portafolio como desarrollador frontend junior multilingüe",
+    "project6Tagline": "Una lista de tareas y compras combinada, llena de funciones y sorpresas.",
     "details": {
       "descriptionTitle": "Descripción",
       "madeWithTitle": "Hecho con",
@@ -77,6 +78,9 @@
       },
       "myPortfolioSite": {
         "description": "Traté de darle a mi sitio web de portafolio una interfaz de usuario colorida pero simple e informativa. Los visitantes de mi sitio también pueden alternar el modo oscuro, navegar en inglés, español o japonés. Además, presté mucha atención para asegurarme de que el sitio fuera fácilmente comprensible e informativo para los posibles empleadores."
+      },
+      "fullFeaturedTodoList": {
+        "description": "Esta es una aplicación de lista de tareas y compras con todas las funciones, construida usando Vue 3, que ofrece una experiencia de usuario elegante e interactiva con una variedad de funciones avanzadas como modo oscuro/claro, inicio de sesión con Firebase, clasificación de tareas basada en prioridades y seguimiento visual del progreso. La aplicación también incluye elementos de gamificación como un sistema de puntos y animaciones de celebración para las tareas completadas, haciendo la gestión de tareas más atractiva."
       }
     }
   },

@@ -1,38 +1,33 @@
 import { createRouter, createWebHashHistory } from "vue-router";
 
-const HomeView = () => import("@/views/HomeView.vue");
-const AboutMeView = () => import("@/views/AboutMeView.vue");
-const ContactMeView = () => import("@/views/ContactMeView.vue");
-const ProjectDetailsView = () => import("@/views/ProjectDetailsView.vue");
-const EarlyProjectsView = () => import("@/views/EarlyProjectsView.vue");
 const router = createRouter({
   history: createWebHashHistory(),
   routes: [
     {
       path: "/",
       name: "home",
-      component: HomeView,
+      component: () => import("@/views/HomeView.vue"),
     },
     {
       path: "/about",
       name: "about",
-      component: AboutMeView,
+      component: () => import("@/views/AboutMeView.vue"),
     },
     {
       path: "/contact",
       name: "contact",
-      component: ContactMeView,
+      component: () => import("@/views/ContactMeView.vue"),
     },
     {
       path: "/project/:id",
       name: "project-details",
-      component: ProjectDetailsView,
+      component: () => import("@/views/ProjectDetailsView.vue"),
       props: true,
     },
     {
       path: "/early-projects",
       name: "early-projects",
-      component: EarlyProjectsView,
+      component: () => import("@/views/EarlyProjectsView.vue"),
     },
     {
       path: "/:pathMatch(.*)",

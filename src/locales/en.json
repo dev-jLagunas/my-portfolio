@@ -57,6 +57,7 @@
     "project3Tagline": "Cosmic Neighborhood is an immersive and interactive space-themed website",
     "project4Tagline": "A horizontal scroll gallery filled with scroll triggered animations",
     "project5Tagline": "My multi-lingual jr frontend developer portfolio website",
+    "project6Tagline": "A full featured Todo/Shopping list hybrid packed with goodies",
     "details": {
       "descriptionTitle": "Description",
       "madeWithTitle": "Made With",
@@ -87,6 +88,11 @@
         "description": "I tried to give my portfolio site a colorful but simple and informative user interface. Visitors of my site are also able to toggle dark mode, browse in English, Spanish, or Japanese. Furthermore, I paid great attention to making sure the site was easily understandable and informative to prospective hirers.",
         "technologies": "Vue, Tailwind CSS, Vue I18n",
         "features": "Responsive design, multi-lingual functionality, beautiful and informative user interface, proper semantic HTML for good accessibility"
+      },
+      "fullFeaturedTodoList": {
+        "description": "This is a full-featured to-do and shopping list app, built using Vue 3, that offers a sleek and interactive user experience with a variety of advanced features like dark/light mode, Firebase login, priority-based task sorting, and visual progress tracking. The app also includes gamification elements like a point system and celebratory animations for completed tasks, making task management more engaging.",
+        "technologies": "Vue 3, Tailwind CSS, Vue Toastification, Pinia, Vue Circle Progress Bar, Firebase Login and Authentication, Canvas Confetti, VueJs tour",
+        "features": "Responsive design, dark and light modes, Firebase login and authentication, Vue Js tour for first time users, Todo list or Shopping list modes available, full C.R.U.D operations, task prioritization and sorting, visual progress bar, point system with canvas confetti and time challene for gameficiation."
       }
     }
   },

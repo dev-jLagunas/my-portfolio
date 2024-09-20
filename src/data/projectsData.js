@@ -26,11 +26,6 @@ export const projectsData = [
     ],
     github: "https://github.com/dev-jLagunas/cafe-refresh",
     liveDemo: "https://cafe-triangle.com/",
-    codeSample: {
-      images: ["code_image1.jpg", "code_image2.jpg"],
-      explanation:
-        "This code snippet shows how we initialize the main Vue instance and configure the router. The second image shows the setup of the state management using Vuex.",
-    },
   },
   {
     id: "2",
@@ -62,11 +57,6 @@ export const projectsData = [
     ],
     github: "https://github.com/dev-jLagunas/code-chicano",
     liveDemo: "https://code-chicano.netlify.app/",
-    codeSample: {
-      images: ["code_image1.jpg", "code_image2.jpg"],
-      explanation:
-        "This code snippet shows how we initialize the main Vue instance and configure the router. The second image shows the setup of the state management using Vuex.",
-    },
   },
   {
     id: "3",
@@ -94,11 +84,6 @@ export const projectsData = [
     ],
     github: "https://github.com/dev-jLagunas/cosmic-neighborhood",
     liveDemo: "https://dev-jlagunas.github.io/cosmic-neighborhood/#/",
-    codeSample: {
-      images: ["code_image1.jpg", "code_image2.jpg"],
-      explanation:
-        "This code snippet shows how we initialize the main Vue instance and configure the router. The second image shows the setup of the state management using Vuex.",
-    },
   },
   {
     id: "4",
@@ -126,11 +111,6 @@ export const projectsData = [
     ],
     github: "https://github.com/dev-jLagunas/horizontal-gallery",
     liveDemo: "https://dev-jlagunas.github.io/horizontal-gallery/",
-    codeSample: {
-      images: ["code_image1.jpg", "code_image2.jpg"],
-      explanation:
-        "This code snippet shows how we initialize the main Vue instance and configure the router. The second image shows the setup of the state management using Vuex.",
-    },
   },
   {
     id: "5",
@@ -159,10 +139,47 @@ export const projectsData = [
     ],
     github: "https://github.com/dev-jLagunas/my-portfolio",
     liveDemo: "https://dev-jlagunas.github.io/my-portfolio/",
-    codeSample: {
-      images: ["code_image1.jpg", "code_image2.jpg"],
-      explanation:
-        "This code snippet shows how we initialize the main Vue instance and configure the router. The second image shows the setup of the state management using Vuex.",
+  },
+  {
+    id: "6",
+    name: "Full Featured Todo List",
+    projectKey: "fullFeaturedTodoList",
+    taglineKey: "project6Tagline",
+    mainScreenshot: "@/assets/screenshots/full-todo-screenshot-main.jpg",
+    images: {
+      desktop: [
+        "@/assets/screenshots/full-todolist-desktop-shot-1.png",
+        "@/assets/screenshots/full-todolist-desktop-shot-2.png",
+        "@/assets/screenshots/full-todolist-desktop-shot-3.png",
+      ],
+      mobile: [
+        "@/assets/screenshots/full-todolist-mobile-shot-2.png",
+        "@/assets/screenshots/full-todolist-mobile-shot-1.png",
+        "@/assets/screenshots/full-todolist-mobile-shot-3.png",
+      ],
     },
+    technologies: [
+      "Vue",
+      "Tailwind CSS",
+      "Vue Toastification",
+      "Pinia",
+      "Vue Circle Progress Bar",
+      "Firebase",
+      "Canvas Confetti",
+    ],
+    features: [
+      "responsive design",
+      "Dark and light modes",
+      "Firebase login and authentication",
+      "Vue js tour for first time users",
+      "Todo list or shopping list modes",
+      "Add, edit, delete, mark complete functionality",
+      "Task prioritization and sorting",
+      "Visual progress bar",
+      "Point system, canvas confetti and time challenge gamefication",
+    ],
+    github:
+      "https://github.com/dev-jLagunas/vue-fulltodolist?tab=readme-ov-file",
+    liveDemo: "https://dev-jlagunas.github.io/vue-fulltodolist/",
   },
 ];
