@@ -30,6 +30,11 @@ const router = createRouter({
       component: () => import("@/views/EarlyProjectsView.vue"),
     },
     {
+      path: "/my-resume",
+      name: "my-resume",
+      component: () => import("@/views/ResumeView.vue"),
+    },
+    {
       path: "/:pathMatch(.*)",
       redirect: "/",
     },

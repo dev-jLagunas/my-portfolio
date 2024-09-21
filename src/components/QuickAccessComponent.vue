@@ -8,15 +8,21 @@ import resumeSvg from "@/assets/svg/resume-business-cv-work-job-curriculum-2-svg
   <div
     class="flex-center-col gap-2 bg-orange-400 p-1 rounded-md opacity-50 hover:opacity-100 duration-300 z-10"
   >
-    <a class="hover:cursor-pointer">
-      <img :src="emailSvg" alt="" class="h-4" />
+    <a href="mailto:dev.jlagunas@gmail.com" class="hover:cursor-pointer">
+      <button aria-label="Send Email">
+        <img :src="emailSvg" alt="email icon" class="h-4" />
+      </button>
     </a>
-    <a class="hover:cursor-pointer">
-      <img :src="phoneSvg" alt="" class="h-4" />
+    <a href="tel:+8108095334142" class="hover:cursor-pointer">
+      <button aria-label="Call Phone">
+        <img :src="phoneSvg" alt="phone icon" class="h-4" />
+      </button>
     </a>
-    <a class="hover:cursor-pointer">
-      <img :src="resumeSvg" alt="" class="h-4" />
-    </a>
+    <router-link to="/my-resume" class="hover:cursor-pointer">
+      <button aria-label="View Resume">
+        <img :src="resumeSvg" alt="document icon" class="h-4" />
+      </button>
+    </router-link>
   </div>
 </template>
 
