@@ -16,8 +16,10 @@
         >dev.jlagunas@gmail.com
       </li>
       <li>
-        <i class="fa-solid fa-file contact-icon-styles"></i
-        >{{ $t("contactMeInformation.fullResume") }}
+        <router-link to="/my-resume" class="flex items-center space-x-2">
+          <i class="fa-solid fa-file contact-icon-styles"></i>
+          <span>{{ $t("contactMeInformation.fullResume") }}</span>
+        </router-link>
       </li>
     </ul>
   </div>
