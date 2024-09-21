@@ -32,7 +32,7 @@ const setLanguage = (lang) => {
 
 <template>
   <nav class="my-6 w-90vw mx-auto font-poppins">
-    <ul class="flex justify-center text-white text-xs gap-2 lg:text-lg">
+    <ul class="flex justify-center text-white text-xs gap-2 lg:text-base">
       <li class="nav-link-emerald">
         <router-link to="/">{{ $t("nav.mainProjects") }}</router-link>
       </li>

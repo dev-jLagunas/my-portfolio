@@ -91,7 +91,7 @@
       },
       "fullFeaturedTodoList": {
         "description": "This is a full-featured to-do and shopping list app, built using Vue 3, that offers a sleek and interactive user experience with a variety of advanced features like dark/light mode, Firebase login, priority-based task sorting, and visual progress tracking. The app also includes gamification elements like a point system and celebratory animations for completed tasks, making task management more engaging.",
-        "technologies": "Vue 3, Tailwind CSS, Vue Toastification, Pinia, Vue Circle Progress Bar, Firebase Login and Authentication, Canvas Confetti, VueJs tour",
+        "technologies": "Vue, Tailwind CSS, Vue Toastification, Pinia, Vue Circle Progress Bar, Firebase Login and Authentication, Canvas Confetti, VueJs tour",
         "features": "Responsive design, dark and light modes, Firebase login and authentication, Vue Js tour for first time users, Todo list or Shopping list modes available, full C.R.U.D operations, task prioritization and sorting, visual progress bar, point system with canvas confetti and time challene for gameficiation."
       }
     }

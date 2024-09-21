@@ -39,7 +39,7 @@ onMounted(() => {
 <template>
   <section
     v-if="project"
-    class="primary-font-colors font-poppins pb-6 mt-4 w-90vw lg:grid lg:grid-cols-8 lg:mx-auto lg:h-screen lg:w-full"
+    class="primary-font-colors font-poppins pb-6 mt-4 w-90vw lg:grid lg:grid-cols-8 lg:mx-auto lg:h-screen lg:w-90vw"
   >
     <div class="lg:col-span-3 lg:sticky lg:top-0 relative">
       <h2 class="font-bold text-4xl text-center md:text-6xl lg:text-5xl">
@@ -54,47 +54,52 @@ onMounted(() => {
             <a :href="project.liveDemo"><i class="fa-solid fa-display"></i></a>
           </button>
         </div>
-        <section class="my-4 lg:w-4/5 lg:mx-auto">
-          <p class="project-details-titles md:text-3xl">
+        <section class="my-4 lg:px-2">
+          <p class="project-details-titles">
             {{ $t("projects.details.descriptionTitle") }}
           </p>
-          <p>{{ t(`projects.details.${project.projectKey}.description`) }}</p>
-        </section>
-        <section>
-          <p class="project-details-titles md:text-3xl">
-            {{ $t("projects.details.madeWithTitle") }}
+          <p class="lg:text-sm">
+            {{ t(`projects.details.${project.projectKey}.description`) }}
           </p>
-          <ul
-            class="flex-center-col md:flex-row md:divide-x-2 md:divide-orange-400 mt-4"
-          >
-            <li
-              v-for="(technology, index) in technologies"
-              :key="index"
-              class="pr-2 pl-2"
-            >
-              {{ technology }}
-            </li>
-          </ul>
         </section>
-        <section class="mb-4">
-          <p class="project-details-titles mt-4 md:text-3xl">
-            {{ $t("projects.details.featuresTitle") }}
-          </p>
-          <ul
-            class="flex-center-col text-center md:flex-row md:divide-x-2 md:divide-orange-400 md:flex-wrap mt-4"
-          >
-            <li v-for="(feature, index) in features" :key="index" class="px-2">
-              {{ feature }}
-            </li>
-          </ul>
-        </section>
+        <div class="md:grid md:grid-cols-2 lg:text-sm lg:px-2">
+          <section>
+            <p class="project-details-titles">
+              {{ $t("projects.details.madeWithTitle") }}
+            </p>
+            <ul class="">
+              <li
+                v-for="(technology, index) in technologies"
+                :key="index"
+                class=""
+              >
+                <i class="fa-solid fa-caret-right pr-1 text-orange-400"></i
+                >{{ technology }}
+              </li>
+            </ul>
+          </section>
+          <section class="my-4 md:my-0">
+            <p class="project-details-titles">
+              {{ $t("projects.details.featuresTitle") }}
+            </p>
+            <ul class="">
+              <li v-for="(feature, index) in features" :key="index" class="">
+                <i class="fa-solid fa-caret-right pr-1 text-orange-400"></i
+                >{{ feature }}
+              </li>
+            </ul>
+          </section>
+        </div>
         <NavButtons class="hidden lg:block" />
       </div>
     </div>
-    <div class="lg:col-span-5 lg:overflow-y-auto lg:pr-2">
+    <div class="lg:col-span-5 lg:overflow-y-auto lg:pr-2 md:mt-4">
       <figure class="flex-center-col gap-4">
         <figcaption class="project-details-titles md:text-4xl">
           {{ $t("projects.details.desktopTitle") }}
+          <span class="hidden lg:block text-xs primary-font-colors"
+            >scroll down to see more images</span
+          >
         </figcaption>
         <img
           v-for="(image, index) in project.images.desktop"
@@ -125,5 +130,13 @@ onMounted(() => {
 <style scoped>
 .custom-shadow {
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.lg\:overflow-y-auto {
+  scrollbar-width: none;
+}
+
+.lg\:overflow-y-auto::-webkit-scrollbar {
+  display: none;
 }
 </style>

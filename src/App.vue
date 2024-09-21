@@ -6,6 +6,7 @@ import Sidebar from "@/components/SidebarComponent.vue";
 import Header from "@/components/HeaderComponent.vue";
 import SocialLinks from "@/components/SocialLinksComponent.vue";
 import QuickLinks from "@/components/QuickAccessComponent.vue";
+
 // State
 const toggleSidebar = ref(false);
 const isDarkMode = ref(false);

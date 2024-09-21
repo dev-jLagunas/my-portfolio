@@ -27,7 +27,7 @@ onMounted(() => {
   >
     <div v-for="project in projects" :key="project.id" class="mb-16 xl:w-5/6">
       <h2
-        class="font-bold text-4xl text-center md:text-5xl lg:text-5xl hover:scale-110 duration-500 hover:cursor-pointer hover:text-emerald-500"
+        class="font-bold text-4xl text-center md:text-5xl lg:text-5xl duration-500 hover:cursor-pointer hover:text-emerald-500"
       >
         <router-link
           :to="{ name: 'project-details', params: { id: project.id } }"
@@ -57,7 +57,7 @@ onMounted(() => {
         /></router-link>
         <figcaption>
           <ul
-            class="bg-emerald-500 text-white flex justify-evenly py-2 text-sm custom-shadow font-semibold"
+            class="bg-emerald-500 text-white flex flex-wrap gap-1 justify-evenly py-2 px-8 text-xs md:text-base custom-shadow font-semibold"
           >
             <li
               v-for="(technology, index) in project.technologies"

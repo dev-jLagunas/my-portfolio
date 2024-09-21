@@ -1,7 +1,7 @@
 <script setup></script>
 
 <template>
-  <div class="w-max mx-auto lg:text-sm lg:mt-8">
+  <div class="w-max mx-auto lg:text-lg lg:mt-8">
     <router-link to="/" class="nav-link-emerald mr-1">{{
       $t("linksBtnsContainer.home")
     }}</router-link>
