@@ -7,13 +7,13 @@
     </h2>
     <ul>
       <li>
-        <i class="fas fa-map-marker-alt contact-icon-styles"></i>Hakusan City,
-        Ishikawa, Japan
+        <i class="fas fa-map-marker-alt contact-icon-styles"></i>Fake City,
+        California
       </li>
-      <li><i class="fas fa-phone contact-icon-styles"></i>080-9533-4142</li>
+      <li><i class="fas fa-phone contact-icon-styles"></i>000-123-4567</li>
       <li>
         <i class="fas fa-envelope contact-icon-styles"></i
-        >dev.jlagunas@gmail.com
+        >myPlaceholderEmail@email.com
       </li>
       <li>
         <router-link to="/my-resume" class="flex items-center space-x-2">

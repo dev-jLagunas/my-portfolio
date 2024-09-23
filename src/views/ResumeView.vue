@@ -1,7 +1,9 @@
 <script setup>
-import myResume from "@/assets/resume/my-resume-img.jpg";
-const pdfResumePath = new URL("@/assets/resume/my-resume.pdf", import.meta.url)
-  .href;
+import myResume from "@/assets/resume/mock-dev-resume-img.jpg";
+const pdfResumePath = new URL(
+  "@/assets/resume/mock-dev-resume.pdf",
+  import.meta.url
+).href;
 
 // Method to download the PDF version of the resume
 const downloadResume = () => {
