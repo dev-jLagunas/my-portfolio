@@ -1,5 +1,5 @@
 <script setup>
-import Hero from "../components/HeroComponent.vue";
+import Hero from "../components/TheHero.vue";
 import ProjectsHome from "../components/ProjectsHome.vue";
 </script>
 

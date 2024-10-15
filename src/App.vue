@@ -1,9 +1,9 @@
 <script setup>
 import { ref } from "vue";
 import { useI18n } from "vue-i18n";
-import Navbar from "@/components/NavbarComponent.vue";
-import Sidebar from "@/components/SidebarComponent.vue";
-import Header from "@/components/HeaderComponent.vue";
+import Navbar from "@/components/TheNavbar.vue";
+import Sidebar from "@/components/TheSidebar.vue";
+import Header from "@/components/TheHeader.vue";
 import SocialLinks from "@/components/SocialLinksComponent.vue";
 import QuickLinks from "@/components/QuickAccessComponent.vue";
 
