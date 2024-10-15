@@ -1,5 +1,5 @@
 <script setup>
-import digitalPortrait from "@/assets/home/digital-portrait.png";
+import digitalPortrait from "@/assets/home/digital-portrait.webp";
 import LinkButtons from "@/components/LinksBtnsContainer.vue";
 </script>
 

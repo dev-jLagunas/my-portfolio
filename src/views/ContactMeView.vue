@@ -1,5 +1,5 @@
 <script setup>
-import selfImg from "@/assets/contact/self-illustration.png";
+import selfImg from "@/assets/contact/self-illustration.webp";
 import LinksButtons from "@/components/LinksBtnsContainer.vue";
 import ContactLinks from "@/components/ContactMeLinks.vue";
 import ContactInfo from "@/components/ContactMeInformation.vue";

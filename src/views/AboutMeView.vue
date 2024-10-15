@@ -1,5 +1,5 @@
 <script setup>
-import selfPhoto from "@/assets/about/self-img.png";
+import selfPhoto from "@/assets/about/self-img.webp";
 import LinksButtons from "@/components/LinksBtnsContainer.vue";
 import Specialization from "@/components/AboutMeSpecialization.vue";
 import Passions from "@/components/AboutMePassions.vue";
