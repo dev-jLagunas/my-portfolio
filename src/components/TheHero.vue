@@ -40,14 +40,14 @@ import LinkButtons from "@/components/LinksBtnsContainer.vue";
       </figcaption>
     </figure>
     <LinkButtons class="hidden lg:block" />
-    <h3
+    <h2
       class="text-center pacifico-title w-max px-4 py-1 mx-auto my-16 text-4xl lg:hidden"
     >
       {{ $t("hero.projects")
       }}<span>
         <i class="fa-solid fa-arrow-turn-down text-orange-400 pl-4"></i>
       </span>
-    </h3>
+    </h2>
   </section>
 </template>
 

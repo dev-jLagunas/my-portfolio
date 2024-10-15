@@ -7,7 +7,7 @@ import frontendMentorLogo from "@/assets/svg/code-svgrepo-com.svg";
 
 <template>
   <div
-    class="flex-center-col gap-2 bg-orange-400 p-1 rounded-md opacity-50 hover:opacity-100 duration-300"
+    class="flex-center-col gap-6 bg-orange-400 p-1 rounded-md opacity-50 hover:opacity-100 duration-300"
   >
     <a
       href="https://github.com/dev-jLagunas"

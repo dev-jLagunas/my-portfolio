@@ -41,10 +41,18 @@ onMounted(() => {
       <figure>
         <ul class="flex justify-evenly text-3xl pb-4">
           <li class="hover:scale-110 duration-500">
-            <a :href="project.github"><i class="fa-brands fa-github"></i></a>
+            <a
+              :href="project.github"
+              aria-label="View {{ project.name }} on GitHub"
+              ><i class="fa-brands fa-github"></i
+            ></a>
           </li>
           <li class="hover:scale-110 duration-500">
-            <a :href="project.liveDemo"><i class="fa-solid fa-display"></i></a>
+            <a
+              :href="project.liveDemo"
+              aria-label="View live demo of {{ project.name }}"
+              ><i class="fa-solid fa-display"></i
+            ></a>
           </li>
         </ul>
         <router-link

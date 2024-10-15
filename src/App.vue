@@ -34,6 +34,7 @@ const toggleDarkMode = () => {
       <button
         @click="toggleSidebar = !toggleSidebar"
         class="text-3xl my-2 text-slate-600 dark:text-slate-400 md:hidden"
+        aria-label="Toggle sidebar"
       >
         <i class="fa-solid fa-bars"></i>
       </button>

@@ -6,7 +6,7 @@ import resumeSvg from "@/assets/svg/resume-business-cv-work-job-curriculum-2-svg
 
 <template>
   <div
-    class="flex-center-col gap-2 bg-orange-400 p-1 rounded-md opacity-50 hover:opacity-100 duration-300 z-10"
+    class="flex-center-col gap-6 bg-orange-400 p-1 rounded-md opacity-50 hover:opacity-100 duration-300 z-10"
   >
     <a href="mailto:dev.jlagunas@gmail.com" class="hover:cursor-pointer">
       <button aria-label="Send Email">
