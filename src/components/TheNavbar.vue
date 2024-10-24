@@ -5,10 +5,15 @@ import { ref } from "vue";
 const isLanguageModalVisible = ref(false);
 
 // Emits
-const emit = defineEmits(["darkModeToggled"]);
+const emit = defineEmits(["darkModeToggled", "change-language"]);
 
 const toggleDarkMode = () => {
   emit("darkModeToggled");
+};
+
+const setLanguage = (lang) => {
+  emit("change-language", lang);
+  isLanguageModalVisible.value = false;
 };
 
 // Props
@@ -22,11 +27,6 @@ const props = defineProps({
 // Methods
 const toggleLanguageModal = () => {
   isLanguageModalVisible.value = !isLanguageModalVisible.value;
-};
-
-const setLanguage = (lang) => {
-  emit("change-language", lang);
-  isLanguageModalVisible.value = false;
 };
 </script>
 

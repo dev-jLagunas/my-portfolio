@@ -2,22 +2,15 @@
 import { useRouter } from "vue-router";
 import { ref } from "vue";
 
-// State
+// Ref
 const isLanguageModalVisible = ref(false);
 
 // Emits
-const emit = defineEmits([
-  "closeSidebar",
-  "darkModeToggled",
-  "change-language",
-]);
+const emit = defineEmits(["closeSidebar", "darkModeToggled", "changeLanguage"]);
 
-const closeSidebar = () => {
-  emit("closeSidebar");
-};
-
-const toggleDarkMode = () => {
-  emit("darkModeToggled");
+const setLanguage = (lang) => {
+  emit("changeLanguage", lang);
+  isLanguageModalVisible.value = false;
 };
 
 // Props
@@ -33,17 +26,12 @@ const router = useRouter();
 
 const navigateTo = (path) => {
   router.push(path);
-  closeSidebar();
+  emit("closeSidebar");
 };
 
 // Methods
 const toggleLanguageModal = () => {
   isLanguageModalVisible.value = !isLanguageModalVisible.value;
-};
-
-const setLanguage = (lang) => {
-  emit("change-language", lang);
-  isLanguageModalVisible.value = false;
 };
 </script>
 
@@ -77,7 +65,7 @@ const setLanguage = (lang) => {
           </button>
         </li>
         <li class="nav-link-orange hover:scale-125 duration-150">
-          <button @click="toggleDarkMode">
+          <button @click="$emit('darkModeToggled')">
             {{ isDarkMode ? $t("sidebar.lightMode") : $t("sidebar.darkMode") }}
           </button>
         </li>
@@ -102,7 +90,10 @@ const setLanguage = (lang) => {
         </li>
       </ul>
     </nav>
-    <button class="mt-12 hover:scale-110 duration-300" @click="closeSidebar">
+    <button
+      class="mt-12 hover:scale-110 duration-300"
+      @click="$emit('closeSidebar')"
+    >
       <i class="fa-solid fa-times text-red-400 text-6xl"></i>
     </button>
   </aside>

@@ -5,6 +5,7 @@ import { useI18n } from "vue-i18n";
 import { projectsData } from "@/data/projectsData.js";
 import NavButtons from "@/components/LinksBtnsContainer.vue";
 
+// Variables & Refs
 const { t } = useI18n();
 const route = useRoute();
 const project = ref(null);
@@ -55,7 +56,7 @@ onMounted(() => {
           </button>
         </div>
         <section class="my-4 lg:px-2">
-          <p class="project-details-titles">
+          <p class="project-details-titles pb-1">
             {{ $t("projects.details.descriptionTitle") }}
           </p>
           <p class="lg:text-sm">
@@ -82,8 +83,8 @@ onMounted(() => {
             <p class="project-details-titles">
               {{ $t("projects.details.featuresTitle") }}
             </p>
-            <ul class="">
-              <li v-for="(feature, index) in features" :key="index" class="">
+            <ul>
+              <li v-for="(feature, index) in features" :key="index">
                 <i class="fa-solid fa-caret-right pr-1 text-orange-400"></i
                 >{{ feature }}
               </li>

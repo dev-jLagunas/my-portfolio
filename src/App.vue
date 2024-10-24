@@ -40,12 +40,12 @@ const toggleDarkMode = () => {
       </button>
       <transition name="fade">
         <Sidebar
-          class="block fixed inset-0 z-10 md:hidden"
+          class="fixed inset-0 z-10 md:hidden"
           v-if="toggleSidebar"
           :isDarkMode="isDarkMode"
-          @darkModeToggled="toggleDarkMode"
+          @dark-mode-toggled="toggleDarkMode"
           @change-language="setLanguage"
-          @closeSidebar="toggleSidebar = false"
+          @close-sidebar="toggleSidebar = false"
         />
       </transition>
     </div>
@@ -68,7 +68,7 @@ const toggleDarkMode = () => {
 <style scoped>
 .fade-enter-active,
 .fade-leave-active {
-  transition: transform 1.5s ease;
+  transition: transform 1s ease;
 }
 
 .fade-enter-from,
