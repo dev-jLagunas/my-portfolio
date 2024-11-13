@@ -1,7 +1,7 @@
 <script setup>
-import myResume from "@/assets/resume/mock-dev-resume-img.jpg";
+import myResume from "@/assets/resume/Juans_Resume.jpg";
 const pdfResumePath = new URL(
-  "@/assets/resume/mock-dev-resume.pdf",
+  "@/assets/resume/Juans_Resume.pdf",
   import.meta.url
 ).href;
 
