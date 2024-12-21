@@ -53,11 +53,12 @@
   },
   "projects": {
     "project1Tagline": "Cafe Triangle was a small cafe located in Kanazawa, Japan",
-    "project2Tagline": "A blog about my experience as a Mexican-American self-taught programmer",
-    "project3Tagline": "Cosmic Neighborhood is an immersive and interactive space-themed website",
-    "project4Tagline": "A horizontal scroll gallery filled with scroll triggered animations",
-    "project5Tagline": "My multi-lingual jr frontend developer portfolio website",
-    "project6Tagline": "A full featured Todo/Shopping list hybrid packed with goodies",
+    "project2Tagline": "The Dog Days is a website for the personal dog walking/sitting business located in Menifee, California of Harrison",
+    "project3Tagline": "A blog about my experience as a Mexican-American self-taught programmer",
+    "project4Tagline": "Cosmic Neighborhood is an immersive and interactive space-themed website",
+    "project5Tagline": "A horizontal scroll gallery filled with scroll triggered animations",
+    "project6Tagline": "My multi-lingual jr frontend developer portfolio website",
+    "project7Tagline": "A full featured Todo/Shopping list hybrid packed with goodies",
     "details": {
       "descriptionTitle": "Description",
       "madeWithTitle": "Made With",
@@ -68,6 +69,11 @@
         "description": "Cafe Triangle was the first fully functioning hosted website I ever made. When I first started learning web dev I made it my one year goal to create our shops website. This is the final project. I especially love the vibrant but subdued user interface.",
         "technologies": "Angular,Tailwind CSS,Flowbite",
         "features": "Multi-lingual functionality for EN/JP/ES,Dark/Light Modes,Responsive Design,Optimized for Speed"
+      },
+      "dogDays": {
+        "description": "This is a website for Harrison's dog walking, sitting, and visiting business based in Menifee, California. Harrison is a sole proprietor who currently works with several families. The purpose of the site is to provide essential information about Harrison and his services, allowing users to easily call or email him to request more information or schedule an appointment.",
+        "technologies": "Vue, SCSS, Formspree, Vite",
+        "features": "Custom UI Design, Responsive Design, Integrated Contact Form, Local SEO Optimization, Best UX Practices, A.I. Generated Artwork"
       },
       "codeChicano": {
         "description": "Code Chicano is a fully functioning C.R.U.D application with Firebase as its backend. It is also made with a quill editor so I am able to login and write new blog posts any time I want. The blog is fully responsive with many great features and funtionality.",

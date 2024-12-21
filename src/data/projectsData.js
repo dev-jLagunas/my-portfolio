@@ -29,9 +29,39 @@ export const projectsData = [
   },
   {
     id: "2",
+    name: "The Dog Days with Harrison",
+    projectKey: "dogDays",
+    taglineKey: "project2Tagline",
+    mainScreenshot: "@/assets/screenshots/dog-screenshot-main.jpg",
+    images: {
+      desktop: [
+        "@/assets/screenshots/dog-desktop-shot-1.png",
+        "@/assets/screenshots/dog-desktop-shot-2.png",
+        "@/assets/screenshots/dog-desktop-shot-3.png",
+      ],
+      mobile: [
+        "@/assets/screenshots/dog-mobile-shot-1.png",
+        "@/assets/screenshots/dog-mobile-shot-2.png",
+        "@/assets/screenshots/dog-mobile-shot-3.png",
+      ],
+    },
+    technologies: ["Vue", "SCSS", "Formspree", "Vite"],
+    features: [
+      "Custom UI Design",
+      "Responsive Design",
+      "Integrated Contact Form",
+      "Local SEO Optimization",
+      "Best UX Practices",
+      "A.I Generated Artwork",
+    ],
+    github: "https://github.com/dev-jLagunas/dog-days",
+    liveDemo: "https://the-dog-days.netlify.app/#/",
+  },
+  {
+    id: "3",
     name: "Code Chicano",
     projectKey: "codeChicano",
-    taglineKey: "project2Tagline",
+    taglineKey: "project3Tagline",
     mainScreenshot: "@/assets/screenshots/chicano-screenshot-main.jpg",
     images: {
       desktop: [
@@ -59,10 +89,10 @@ export const projectsData = [
     liveDemo: "https://code-chicano.netlify.app/",
   },
   {
-    id: "3",
+    id: "4",
     name: "Cosmic Neighborhood",
     projectKey: "cosmicNeighborhood",
-    taglineKey: "project3Tagline",
+    taglineKey: "project4Tagline",
     mainScreenshot: "@/assets/screenshots/cosmic-screenshot-main.jpg",
     images: {
       desktop: [
@@ -86,10 +116,10 @@ export const projectsData = [
     liveDemo: "https://dev-jlagunas.github.io/cosmic-neighborhood/#/",
   },
   {
-    id: "4",
+    id: "5",
     name: "Horizontal Scroll Gallery",
     projectKey: "horizontalScrollGallery",
-    taglineKey: "project4Tagline",
+    taglineKey: "project5Tagline",
     mainScreenshot: "@/assets/screenshots/gallery-screenshot-main.jpg",
     images: {
       desktop: [
@@ -113,10 +143,10 @@ export const projectsData = [
     liveDemo: "https://dev-jlagunas.github.io/horizontal-gallery/",
   },
   {
-    id: "5",
+    id: "6",
     name: "My Portfolio Site",
     projectKey: "myPortfolioSite",
-    taglineKey: "project5Tagline",
+    taglineKey: "project6Tagline",
     mainScreenshot: "@/assets/screenshots/portfolio-screenshot-main.jpg",
     images: {
       desktop: [
@@ -141,10 +171,10 @@ export const projectsData = [
     liveDemo: "https://dev-jlagunas.github.io/my-portfolio/",
   },
   {
-    id: "6",
+    id: "7",
     name: "Full Featured Todo List",
     projectKey: "fullFeaturedTodoList",
-    taglineKey: "project6Tagline",
+    taglineKey: "project7Tagline",
     mainScreenshot: "@/assets/screenshots/full-todo-screenshot-main.jpg",
     images: {
       desktop: [

@@ -53,11 +53,12 @@
   },
   "projects": {
     "project1Tagline": "Cafe Triangle era un pequeño café ubicado en Kanazawa, Japón",
-    "project2Tagline": "Un blog sobre mi experiencia como programador autodidacta mexicano-americano",
-    "project3Tagline": "Cosmic Neighborhood es un sitio web temático del espacio inmersivo e interactivo",
-    "project4Tagline": "Una galería de desplazamiento horizontal llena de animaciones activadas por desplazamiento",
-    "project5Tagline": "Mi sitio web de portafolio como desarrollador frontend junior multilingüe",
-    "project6Tagline": "Una lista de tareas y compras combinada, llena de funciones y sorpresas.",
+    "project2Tagline": "The Dog Days es un sitio web para el negocio personal de paseo/cuidado de perros ubicado en Menifee, California, de Harrison.",
+    "project3Tagline": "Un blog sobre mi experiencia como programador autodidacta mexicano-americano",
+    "project4Tagline": "Cosmic Neighborhood es un sitio web temático del espacio inmersivo e interactivo",
+    "project5Tagline": "Una galería de desplazamiento horizontal llena de animaciones activadas por desplazamiento",
+    "project6Tagline": "Mi sitio web de portafolio como desarrollador frontend junior multilingüe",
+    "project7Tagline": "Una lista de tareas y compras combinada, llena de funciones y sorpresas.",
     "details": {
       "descriptionTitle": "Descripción",
       "madeWithTitle": "Hecho con",
@@ -66,6 +67,9 @@
       "mobileTitle": "Móvil",
       "cafeTriangle": {
         "description": "Cafe Triangle fue el primer sitio web completamente funcional que hice. Cuando comencé a aprender desarrollo web, me propuse como objetivo de un año crear el sitio web de nuestra tienda. Este es el proyecto final. Me encanta especialmente la interfaz de usuario vibrante pero sutil."
+      },
+      "dogDays": {
+        "description": "Este es un sitio web para el negocio de paseo, cuidado y visitas a perros de Harrison, ubicado en Menifee, California. Harrison es un propietario único que actualmente trabaja con varias familias. El propósito del sitio es proporcionar información esencial sobre Harrison y sus servicios, permitiendo a los usuarios llamarlo o enviarle un correo electrónico fácilmente para solicitar más información o programar una cita."
       },
       "codeChicano": {
         "description": "Code Chicano es una aplicación C.R.U.D completamente funcional con Firebase como su backend. También está hecho con un editor de plumas para que pueda iniciar sesión y escribir nuevas publicaciones en el blog en cualquier momento. El blog es completamente responsive con muchas características y funcionalidades geniales."
